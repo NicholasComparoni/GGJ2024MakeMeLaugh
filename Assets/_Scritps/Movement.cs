@@ -55,6 +55,10 @@ namespace InputAndMovement
         {
             moveInputValue =value.Get<Vector2>();
             Debug.Log(moveInputValue);
+        }        
+        private void OnInteractionButton()
+        {
+            Debug.Log("Patate al forno");
         }
 
         private void MoveLogicController()
@@ -66,6 +70,7 @@ namespace InputAndMovement
         {
             MoveLogicController();
             RotateTransform(moveInputValue);
+            OnInteractionButton();
 
         }
     }
