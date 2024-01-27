@@ -11,7 +11,7 @@ namespace InputAndMovement
         [SerializeField] SpriteRenderer _bodySprite;
         private float angle = 0;
         private Vector2 moveInputValue;
-        private Pickup _target; //A chi chiamare qualcosa
+        private Target _target; //A chi chiamare qualcosa
 
         public void Move(Vector2 direction)
         {
@@ -56,6 +56,7 @@ namespace InputAndMovement
             Debug.Log(moveInputValue);
         }
 
+
         private void MoveLogicController()
         {
             Vector2 result = moveInputValue * _speed;
@@ -68,15 +69,33 @@ namespace InputAndMovement
             RotateTransform(moveInputValue);
         }
 
-        private void OnInteractionButton()
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            //Debug.Log("Patate al forno");
-            if (_target != null)
+            //Debug.Log(other.name);
+            if (other.TryGetComponent<PickupTarget>(out PickupTarget pickup))
+                _target = pickup;
+
+
+            if (other.TryGetComponent<TeleportTarget>(out TeleportTarget teleportus))
             {
-                _target.PickUp();
+                _target = teleportus;
+                teleportus.Teleporting();
                 _target = null;
             }
         }
+
+        private void OnInteractionButton()
+        {
+            //Debug.Log("Patate al forno");
+
+            if (_target.GetType() == typeof(PickupTarget))
+            {
+                PickupTarget target = (PickupTarget)_target;
+                target.PickUp();
+                _target = null;
+            }
+        }
+
 
         private void OnDialogueSkip()
         {
@@ -84,12 +103,6 @@ namespace InputAndMovement
             {
                 CharacterBehaviour._currentCharacterInteraction.Speak();
             }
-        }
-
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            Debug.Log(other.name);
-            _target = other.GetComponent<Pickup>();
         }
 
         private void OnTriggerExit2D(Collider2D other)
