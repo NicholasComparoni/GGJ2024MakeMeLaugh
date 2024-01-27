@@ -903,6 +903,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499691813701202231, guid: 75183df3780fa9e439ea73fb5dd044cc, type: 3}
+      propertyPath: _panel
+      value: 
+      objectReference: {fileID: 1083323722}
+    - target: {fileID: 6499691813701202231, guid: 75183df3780fa9e439ea73fb5dd044cc, type: 3}
       propertyPath: _player
       value: 
       objectReference: {fileID: 2062187078}
