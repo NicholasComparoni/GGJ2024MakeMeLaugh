@@ -14,6 +14,8 @@ namespace InputAndMovement
         [SerializeField] SpriteRenderer _bodySprite;
         private float angle = 0;
         private Vector2 moveInputValue;
+        private Pickup _target;            //A chi chiamare qualcosa
+
         public void Move(Vector2 direction)
         {
             MoveTransform(direction);
@@ -55,10 +57,6 @@ namespace InputAndMovement
         {
             moveInputValue =value.Get<Vector2>();
             Debug.Log(moveInputValue);
-        }        
-        private void OnInteractionButton()
-        {
-            //Debug.Log("Patate al forno");
         }
 
         private void MoveLogicController()
@@ -70,8 +68,30 @@ namespace InputAndMovement
         {
             MoveLogicController();
             RotateTransform(moveInputValue);
-            OnInteractionButton();
+       
 
+        }
+
+        private void OnInteractionButton()
+        {
+            Debug.Log("Patate al forno");
+
+            if (_target != null)
+            {
+                _target.PickUp();
+                _target = null;
+            }
+
+        }
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            Debug.Log(other.name);
+        _target = other.GetComponent<Pickup>();
+
+        }
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            _target = null;
         }
     }
 }
