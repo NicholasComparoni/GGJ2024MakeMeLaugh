@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="" />
+    <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestMechanics/DialogueSystem.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestMechanics/DialogueSystem.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scritps/DialogueSystem/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scritps/DialogueSystem/Character.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +20,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_Scritps/DialogueSystem/Character.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scritps/DialogueSystem/PlayerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scritps/UI/DialogueCanvas.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
@@ -54,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706344548380</updated>
-      <workItem from="1706344556076" duration="3374000" />
+      <workItem from="1706344556076" duration="5112000" />
     </task>
     <servers />
   </component>
