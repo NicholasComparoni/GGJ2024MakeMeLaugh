@@ -46,8 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36accc9229f85314e9cac3c235f08dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 8502238019431442348, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
   _arrivePoint: {fileID: 4636201460564929694}
+  _transitionTime: 2
+  _blackScreenTime: 1
 --- !u!61 &6957721041795336842
 BoxCollider2D:
   m_ObjectHideFlags: 0
