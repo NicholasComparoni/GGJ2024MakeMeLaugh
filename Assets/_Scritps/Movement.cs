@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace InputAndMovement
 {
@@ -12,9 +13,11 @@ namespace InputAndMovement
         [SerializeField] Rigidbody2D _rb;
         [SerializeField] SpriteRenderer _bodySprite;
         private float angle = 0;
+        private Vector2 moveInputValue;
         public void Move(Vector2 direction)
         {
             MoveTransform(direction);
+
         }
 
         private void MoveTransform(Vector2 direction)
@@ -28,27 +31,43 @@ namespace InputAndMovement
         }
         public void RotateTransform(Vector2 direction)
         {
-            _bodySprite.transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
-            if (direction == Vector2.up)
+            if (moveInputValue.y > 0.1f)
             {
                 angle = 0f;
             }
-            else if (direction == Vector2.down)
+            else if (moveInputValue.y < -0.1f)
             {
                 angle = 180f;
             }
-            else if (direction == Vector2.left)
-            {
-                angle = 90f;
-            }
-            else if (direction == Vector2.right)
+            else if (moveInputValue.x > 0.1f)
             {
                 angle = -90f;
             }
+            else if (moveInputValue.x < -0.1f)
+            {
+                angle = 90f;
+            }
+            _bodySprite.transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
         }
+        public void OnMove(InputValue value)
+        {
+            moveInputValue =value.Get<Vector2>();
+            Debug.Log(moveInputValue);
+        }
 
+        private void MoveLogicController()
+        {
+            Vector2 result = moveInputValue * _speed;
+            _rb.velocity = result;
+        }
+        private void FixedUpdate()
+        {
+            MoveLogicController();
+            RotateTransform(moveInputValue);
+
+        }
     }
 }
 

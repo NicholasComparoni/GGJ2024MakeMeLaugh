@@ -11,44 +11,34 @@ namespace InputAndMovement
         [SerializeField] Character _target;
         Vector2 direction;
 
-
-        void Start()
-        {
-
-        }
-
-
         void Update()
         {
+
             direction = Vector2.zero;
- 
+
 
             if (Input.GetKey(KeyCode.D))
             {
-               // Debug.Log("San Pellegrino");
+                // Debug.Log("San Pellegrino");
                 direction += Vector2.right;
                 //_target._stepsNum++
             }
             if (Input.GetKey(KeyCode.A))
             {
-               // Debug.Log("Lady Gabibba");
+                // Debug.Log("Lady Gabibba");
                 direction += Vector2.left;
                 //_target._stepsNum++
-
-
             }
             if (Input.GetKey(KeyCode.S))
             {
-
-               // Debug.Log("Roventa");
+                // Debug.Log("Roventa");
                 direction += Vector2.down;
-
                 //_target._stepsNum++
 
             }
             if (Input.GetKey(KeyCode.W))     //{ direction += Vector2.up; }Conviene scrivere una singola instruzione di lato?
             {
-               // Debug.Log("Rio Casamia");
+                // Debug.Log("Rio Casamia");
                 direction += Vector2.up;
 
                 //_target._stepsNum++
@@ -58,5 +48,5 @@ namespace InputAndMovement
             _target.RotateTransform(direction);
         }
     }
-
 }
+
