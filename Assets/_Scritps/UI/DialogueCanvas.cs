@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogueCanvas : MonoBehaviour
@@ -17,6 +14,6 @@ public class DialogueCanvas : MonoBehaviour
 
     void Start()
     {
-        //gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 }
