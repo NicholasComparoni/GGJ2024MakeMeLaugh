@@ -50,22 +50,5 @@ namespace InputAndMovement
         }
 
     }
-    //    private void OnTriggerEnter(Collider other)
-    //    {
-    //        //Debug.Log("ONTRIGGERENTER");
-    //        var interactable = other.GetComponentInParent<Interactable>();
-    //        if (interactable is Interactable)
-    //        {
-    //            interactable.Interact();
-    //            var coin = interactable.GetComponent<Coin>();    //Scrivibile anche come - interactable as Coin -
-    //            if (coin != null)
-    //            {
-    //                _coinCollected += coin.GetValue();
-    //                Debug.Log($"Interacted with {coin.name} coin collected {_coinCollected}");
-    //            }
-    //        }
-    //    }
-    //}
-    //}
 }
 
