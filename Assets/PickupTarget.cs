@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class Pickup : MonoBehaviour
+public class PickupTarget : Target
 {
     public bool hasBeenReached = false;
    

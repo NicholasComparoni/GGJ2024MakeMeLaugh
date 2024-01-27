@@ -14,8 +14,7 @@ namespace InputAndMovement
         [SerializeField] SpriteRenderer _bodySprite;
         private float angle = 0;
         private Vector2 moveInputValue;
-        private Pickup _target;            //A chi chiamare qualcosa
-
+        private Target _target;            //A chi chiamare qualcosa
         public void Move(Vector2 direction)
         {
             MoveTransform(direction);
@@ -55,10 +54,10 @@ namespace InputAndMovement
         }
         public void OnMove(InputValue value)
         {
-            moveInputValue =value.Get<Vector2>();
+            moveInputValue = value.Get<Vector2>();
             Debug.Log(moveInputValue);
-        }        
-       
+        }
+
 
         private void MoveLogicController()
         {
@@ -69,25 +68,33 @@ namespace InputAndMovement
         {
             MoveLogicController();
             RotateTransform(moveInputValue);
-       
-
         }
-
-        private void OnInteractionButton()
+      
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            Debug.Log("Patate al forno");
+            //Debug.Log(other.name);
+            if (other.TryGetComponent<PickupTarget>(out PickupTarget pickup))
+                _target = pickup;
 
-            if (_target != null)
+
+            if (other.TryGetComponent<TeleportTarget>(out TeleportTarget teleportus))
             {
-                _target.PickUp();
+                _target = teleportus;
+                teleportus.Teleporting();
                 _target = null;
             }
 
         }
-        private void OnTriggerEnter2D(Collider2D other)
+        private void OnInteractionButton()
         {
-            Debug.Log(other.name);
-        _target = other.GetComponent<Pickup>();
+            //Debug.Log("Patate al forno");
+
+            if (_target.GetType() == typeof(PickupTarget))
+            {
+                PickupTarget target = (PickupTarget)_target;
+                target.PickUp();
+                _target = null;
+            }
 
         }
         private void OnTriggerExit2D(Collider2D other)
