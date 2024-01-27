@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,12 +11,11 @@ namespace InputAndMovement
         [SerializeField] SpriteRenderer _bodySprite;
         private float angle = 0;
         private Vector2 moveInputValue;
-        private Pickup _target;            //A chi chiamare qualcosa
+        private Pickup _target; //A chi chiamare qualcosa
 
         public void Move(Vector2 direction)
         {
             MoveTransform(direction);
-
         }
 
         private void MoveTransform(Vector2 direction)
@@ -31,9 +27,9 @@ namespace InputAndMovement
 
             transform.position = (Vector2)transform.position + deltaMove;
         }
+
         public void RotateTransform(Vector2 direction)
         {
-
             if (moveInputValue.y > 0.1f)
             {
                 angle = 0f;
@@ -50,12 +46,13 @@ namespace InputAndMovement
             {
                 angle = 90f;
             }
-            _bodySprite.transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
+            _bodySprite.transform.rotation = Quaternion.Euler(0f, 0f, angle);
         }
+
         public void OnMove(InputValue value)
         {
-            moveInputValue =value.Get<Vector2>();
+            moveInputValue = value.Get<Vector2>();
             Debug.Log(moveInputValue);
         }
 
@@ -64,35 +61,40 @@ namespace InputAndMovement
             Vector2 result = moveInputValue * _speed;
             _rb.velocity = result;
         }
+
         private void FixedUpdate()
         {
             MoveLogicController();
             RotateTransform(moveInputValue);
-       
-
         }
 
         private void OnInteractionButton()
         {
-            Debug.Log("Patate al forno");
-
+            //Debug.Log("Patate al forno");
             if (_target != null)
             {
                 _target.PickUp();
                 _target = null;
             }
-
         }
+
+        private void OnDialogueSkip()
+        {
+            if (DialogueCanvas.Instance.gameObject.activeSelf)
+            {
+                CharacterBehaviour._currentCharacterInteraction.Speak();
+            }
+        }
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             Debug.Log(other.name);
-        _target = other.GetComponent<Pickup>();
-
+            _target = other.GetComponent<Pickup>();
         }
+
         private void OnTriggerExit2D(Collider2D other)
         {
             _target = null;
         }
     }
 }
-

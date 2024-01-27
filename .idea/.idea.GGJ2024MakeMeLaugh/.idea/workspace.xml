@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Pickup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Pickup.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Prefabs/Key.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Prefabs/Key.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem/PlayerMovement.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/PlayerMovement.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestMechanics/TestMovement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestMechanics/TestMovement.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scritps/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scritps/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scritps/DialogueSystem/CharacterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scritps/DialogueSystem/CharacterBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scritps/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scritps/PlayerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +37,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "dialogue-system",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706344548380</updated>
-      <workItem from="1706344556076" duration="6659000" />
+      <workItem from="1706344556076" duration="10676000" />
     </task>
     <servers />
   </component>
