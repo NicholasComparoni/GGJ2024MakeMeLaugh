@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -8,6 +7,10 @@ public class CharacterBehaviour : MonoBehaviour
 {
     [SerializeField] private string _charName;
     [SerializeField] private List<DialogueNode> _dialogue;
+    [SerializeField] [TextArea] private string _lastDialogueText;
+    public static CharacterBehaviour _currentCharacterInteraction;
+    private int _dialogueIndex = 0;
+    private bool _isFirtInteraction = true;
 
     [Serializable]
     struct DialogueNode
@@ -23,33 +26,54 @@ public class CharacterBehaviour : MonoBehaviour
         Player
     }
 
-    //Functions
     private void Start()
     {
-        StartCoroutine(Speak());
+        _currentCharacterInteraction = this;
     }
 
-    public IEnumerator Speak()
+    //Functions
+    public void Speak(CharacterTarget target)
     {
+        DialogueCanvas.Instance.gameObject.SetActive(true);
         DialogueNameBox nameBox = DialogueCanvas.Instance.GetComponentInChildren<DialogueNameBox>();
         DialogueTextBox textBox = DialogueCanvas.Instance.GetComponentInChildren<DialogueTextBox>();
-        foreach (DialogueNode node in _dialogue)
+        if (_isFirtInteraction)
         {
-            if (node.currentSpeaker == Speaker.Character)
+            if (_dialogueIndex < _dialogue.Count)
+            {
+                if (_dialogue[_dialogueIndex].currentSpeaker == Speaker.Character)
+                {
+                    nameBox.GetComponentInChildren<TMP_Text>().text = _charName;
+                }
+
+                if (_dialogue[_dialogueIndex].currentSpeaker == Speaker.Player)
+                {
+                    PlayerBehaviour player = FindObjectOfType<PlayerBehaviour>();
+                    nameBox.GetComponentInChildren<TMP_Text>().text = player.PlayerName;
+                }
+
+                textBox.GetComponentInChildren<TMP_Text>().text = _dialogue[_dialogueIndex].dialogueText;
+                _dialogueIndex++;
+            }
+            else
+            {
+                target.CloseDialogue();
+                _isFirtInteraction = false;
+            }
+        }
+        else
+        {
+            if (_dialogueIndex > 0)
             {
                 nameBox.GetComponentInChildren<TMP_Text>().text = _charName;
+                textBox.GetComponentInChildren<TMP_Text>().text = _lastDialogueText;
+                _dialogueIndex = 0;
             }
-
-            if (node.currentSpeaker == Speaker.Player)
+            else
             {
-                PlayerBehaviour player = FindObjectOfType<PlayerBehaviour>();
-                nameBox.GetComponentInChildren<TMP_Text>().text = player.PlayerName;
+                target.CloseDialogue();
+                _dialogueIndex++;
             }
-
-            textBox.GetComponentInChildren<TMP_Text>().text = node.dialogueText;
-            yield return new WaitForSeconds(node.speakingTime);
         }
-
-        yield return 0;
     }
 }
