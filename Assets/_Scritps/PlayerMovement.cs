@@ -1,3 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.TextCore.Text;
@@ -7,12 +11,14 @@ namespace InputAndMovement
     [RequireComponent(typeof(Rigidbody2D))]
     public class PlayerMovement : MonoBehaviour
     {
-        [SerializeField] float _speed = 1;
-        [SerializeField] Rigidbody2D _rb;
+        [SerializeField] public float _speed = 1;
+        [SerializeField] public Rigidbody2D _rb;
         [SerializeField] SpriteRenderer _bodySprite;
         private float angle = 0;
         private Vector2 moveInputValue;
-        private Target _target; //A chi chiamare qualcosa
+        private Target _target;            //A chi chiamare qualcosa
+    
+
 
         public void Move(Vector2 direction)
         {
@@ -56,7 +62,10 @@ namespace InputAndMovement
             moveInputValue = value.Get<Vector2>();
             //Debug.Log(moveInputValue);
         }
-
+        public void StopVelocity()
+        {
+            _rb.velocity = Vector2.zero;
+        }
 
         private void MoveLogicController()
         {
@@ -118,5 +127,7 @@ namespace InputAndMovement
                 CharacterBehaviour._currentCharacterInteraction.Speak(CharacterBehaviour._currentCharacterInteraction.GetComponent<CharacterTarget>());
             }
         }
+
+
     }
 }
