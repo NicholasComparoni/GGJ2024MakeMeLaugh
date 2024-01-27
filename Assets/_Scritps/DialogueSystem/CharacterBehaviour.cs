@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -30,32 +29,51 @@ public class CharacterBehaviour : MonoBehaviour
     private void Start()
     {
         _currentCharacterInteraction = this;
-        Speak();
     }
 
     //Functions
-    public void Speak()
+    public void Speak(CharacterTarget target)
     {
+        DialogueCanvas.Instance.gameObject.SetActive(true);
         DialogueNameBox nameBox = DialogueCanvas.Instance.GetComponentInChildren<DialogueNameBox>();
         DialogueTextBox textBox = DialogueCanvas.Instance.GetComponentInChildren<DialogueTextBox>();
-        if (_dialogueIndex < _dialogue.Count)
+        if (_isFirtInteraction)
         {
-            if (_dialogue[_dialogueIndex].currentSpeaker == Speaker.Character)
+            if (_dialogueIndex < _dialogue.Count)
             {
-                nameBox.GetComponentInChildren<TMP_Text>().text = _charName;
+                if (_dialogue[_dialogueIndex].currentSpeaker == Speaker.Character)
+                {
+                    nameBox.GetComponentInChildren<TMP_Text>().text = _charName;
+                }
+
+                if (_dialogue[_dialogueIndex].currentSpeaker == Speaker.Player)
+                {
+                    PlayerBehaviour player = FindObjectOfType<PlayerBehaviour>();
+                    nameBox.GetComponentInChildren<TMP_Text>().text = player.PlayerName;
+                }
+
+                textBox.GetComponentInChildren<TMP_Text>().text = _dialogue[_dialogueIndex].dialogueText;
+                _dialogueIndex++;
             }
-            if (_dialogue[_dialogueIndex].currentSpeaker == Speaker.Player)
+            else
             {
-                PlayerBehaviour player = FindObjectOfType<PlayerBehaviour>();
-                nameBox.GetComponentInChildren<TMP_Text>().text = player.PlayerName;
+                target.CloseDialogue();
+                _isFirtInteraction = false;
             }
-            textBox.GetComponentInChildren<TMP_Text>().text = _dialogue[_dialogueIndex].dialogueText;
-            _dialogueIndex++;
         }
         else
         {
-            nameBox.GetComponentInChildren<TMP_Text>().text = _charName;
-            textBox.GetComponentInChildren<TMP_Text>().text = "Hai rotto il cazzo, non ripeto la stessa cosa due volte. LAVORAAAA!!!";
+            if (_dialogueIndex > 0)
+            {
+                nameBox.GetComponentInChildren<TMP_Text>().text = _charName;
+                textBox.GetComponentInChildren<TMP_Text>().text = _lastDialogueText;
+                _dialogueIndex = 0;
+            }
+            else
+            {
+                target.CloseDialogue();
+                _dialogueIndex++;
+            }
         }
     }
 }

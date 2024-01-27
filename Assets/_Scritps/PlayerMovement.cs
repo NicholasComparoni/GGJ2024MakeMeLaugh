@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.TextCore.Text;
 
 namespace InputAndMovement
 {
@@ -53,7 +54,7 @@ namespace InputAndMovement
         public void OnMove(InputValue value)
         {
             moveInputValue = value.Get<Vector2>();
-            Debug.Log(moveInputValue);
+            //Debug.Log(moveInputValue);
         }
 
 
@@ -71,27 +72,40 @@ namespace InputAndMovement
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            //Debug.Log(other.name);
-            if (other.TryGetComponent<PickupTarget>(out PickupTarget pickup))
+            Debug.Log(other.name);
+            if (other.gameObject.TryGetComponent(out PickupTarget pickup))
                 _target = pickup;
 
-
-            if (other.TryGetComponent<TeleportTarget>(out TeleportTarget teleportus))
+            if (other.gameObject.TryGetComponent(out TeleportTarget teleportus))
             {
                 _target = teleportus;
                 teleportus.Teleporting();
                 _target = null;
             }
+            
+            if (other.gameObject.TryGetComponent(out CharacterTarget character))
+                _target = character;
+        }
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            _target = null;
         }
 
         private void OnInteractionButton()
         {
             //Debug.Log("Patate al forno");
 
-            if (_target.GetType() == typeof(PickupTarget))
+            if (_target?.GetType() == typeof(PickupTarget))
             {
                 PickupTarget target = (PickupTarget)_target;
                 target.PickUp();
+                _target = null;
+            }
+
+            if (_target?.GetType() == typeof(CharacterTarget))
+            {
+                CharacterTarget target = (CharacterTarget)_target;
+                target.StartDialogue();
                 _target = null;
             }
         }
@@ -101,13 +115,8 @@ namespace InputAndMovement
         {
             if (DialogueCanvas.Instance.gameObject.activeSelf)
             {
-                CharacterBehaviour._currentCharacterInteraction.Speak();
+                CharacterBehaviour._currentCharacterInteraction.Speak(CharacterBehaviour._currentCharacterInteraction.GetComponent<CharacterTarget>());
             }
-        }
-
-        private void OnTriggerExit2D(Collider2D other)
-        {
-            _target = null;
         }
     }
 }
