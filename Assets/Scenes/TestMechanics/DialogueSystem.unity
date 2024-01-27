@@ -532,6 +532,18 @@ PrefabInstance:
       propertyPath: _lastDialogueText
       value: Che vuoi ancora? Non rompermi il cazzo! LAVORAAAA!!!!
       objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[5].dialogueText
+      value: E' per questo che il marito la ha lasciata!
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[5].speakingTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.6575282
