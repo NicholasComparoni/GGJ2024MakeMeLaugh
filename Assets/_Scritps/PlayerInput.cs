@@ -6,9 +6,9 @@ using UnityEngine.UIElements;
 
 namespace InputAndMovement
 {
-    public class InputPlayer : MonoBehaviour
+    public class PlayerInput : MonoBehaviour
     {
-        [SerializeField] Movement _target;
+        [SerializeField] PlayerMovement _target;
         Vector2 direction;
 
         //void Update()
