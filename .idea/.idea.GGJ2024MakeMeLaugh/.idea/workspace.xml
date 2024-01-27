@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Character.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Target.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Target.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TeleportTarget.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TeleportTarget.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pickup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PickupTarget.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pickup.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PickupTarget.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestMechanics/TestMovement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestMechanics/TestMovement.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scritps/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scritps/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TeleportTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TeleportTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Player.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +36,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging dialogue-system",
+    "git-widget-placeholder": "dialogue-system",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706344548380</updated>
-      <workItem from="1706344556076" duration="10932000" />
+      <workItem from="1706344556076" duration="11629000" />
     </task>
     <servers />
   </component>
