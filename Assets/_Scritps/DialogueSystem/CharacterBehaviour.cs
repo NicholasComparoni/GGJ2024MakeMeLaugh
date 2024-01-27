@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class CharacterBehaviour : MonoBehaviour
 {
     [SerializeField] private string _charName;
     [SerializeField] private List<DialogueNode> _dialogue;

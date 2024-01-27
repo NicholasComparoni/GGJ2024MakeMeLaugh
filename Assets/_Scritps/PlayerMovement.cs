@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 namespace InputAndMovement
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class Character : MonoBehaviour
+    public class PlayerMovement : MonoBehaviour
     {
         [SerializeField] float _speed = 1;
         [SerializeField] Rigidbody2D _rb;
@@ -58,7 +58,7 @@ namespace InputAndMovement
         }        
         private void OnInteractionButton()
         {
-            Debug.Log("Patate al forno");
+            //Debug.Log("Patate al forno");
         }
 
         private void MoveLogicController()
