@@ -9,6 +9,7 @@ public class CharacterBehaviour : MonoBehaviour
     [SerializeField] private string _charName;
     [SerializeField] private List<DialogueNode> _dialogue;
     [SerializeField] [TextArea] private string _lastDialogueText;
+    [SerializeField] private AudioClip _lastDialogueClip;
     public static CharacterBehaviour _currentCharacterInteraction;
     private int _dialogueIndex = 0;
     private bool _isFirtInteraction = true;
@@ -72,6 +73,7 @@ public class CharacterBehaviour : MonoBehaviour
             {
                 nameBox.GetComponentInChildren<TMP_Text>().text = _charName;
                 textBox.GetComponentInChildren<TMP_Text>().text = _lastDialogueText;
+                gameObject.GetComponent<AudioSource>().PlayOneShot(_lastDialogueClip);
                 _dialogueIndex = 0;
             }
             else
