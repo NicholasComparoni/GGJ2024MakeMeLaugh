@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 608595498799379625}
   - component: {fileID: 7391869523070697344}
   - component: {fileID: 1400698637135487393}
+  - component: {fileID: -5667021442938494530}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -60,23 +61,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3fae188ebdf9842b69fe4ba8a6c878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _charName: Ludovico
-  _dialogue:
-  - speakingTime: 2
-    currentSpeaker: 0
-    dialogueText: Ciao! Come va?
-  - speakingTime: 2
-    currentSpeaker: 1
-    dialogueText: Bene grazie, tu?
-  - speakingTime: 3
-    currentSpeaker: 0
-    dialogueText: Non male, hai sentito che la Meloni ha 6 dita dei piedi?
-  - speakingTime: 4.3
-    currentSpeaker: 0
-    dialogueText: Non male, hai sentito che la Meloni ha 6 dita dei piedi?
-  - speakingTime: 3
-    currentSpeaker: 0
-    dialogueText: E' per questo che il marito la ha lasciata!
+  _charName: 
+  _dialogue: []
   _lastDialogueText: 
 --- !u!82 &7391869523070697344
 AudioSource:
@@ -203,7 +189,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0067213774, y: 0}
@@ -219,6 +205,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1545904, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &-5667021442938494530
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7728384071963477568}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &8583680226947798981
 GameObject:
   m_ObjectHideFlags: 0
