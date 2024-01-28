@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5092911928673938452
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 715447978249115164, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_Size.x
+      value: 4.1262665
+      objectReference: {fileID: 0}
+    - target: {fileID: 715447978249115164, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_Size.y
+      value: 3.6447904
+      objectReference: {fileID: 0}
+    - target: {fileID: 715447978249115164, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.4390304
+      objectReference: {fileID: 0}
+    - target: {fileID: 715447978249115164, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0148586035
+      objectReference: {fileID: 0}
+    - target: {fileID: 997092720455010804, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 997092720455010804, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _charName
+      value: Drago Figo Forte Possente Sputafiamme Maestoso Li Mortacci Tua
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _lastDialogueText
+      value: BANZAIIIIII
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[1].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: d82eb00d641b4f84f9a82eb2e718e3b9, type: 3}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[2].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a728c46d061fd84a8124fcc83ff1851, type: 3}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[3].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 819a72efb7105d349bf5afbc91aefc16, type: 3}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[4].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e565a4fd6b94ec4b97710eb5efa7b0f, type: 3}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[5].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: e3280e755dae5a345a0bf110da9b05ed, type: 3}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[6].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: c528c46077636f140bdccf913b0f12cc, type: 3}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[7].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: ae29a3636a86d3640b9aedfb7ad6741a, type: 3}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[8].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a728c46d061fd84a8124fcc83ff1851, type: 3}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[9].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: a997abf0d7bbf274bba857a5a354b0fb, type: 3}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[0].dialogueText
+      value: BENVENUTO NELLA MIA DIMORA, TROPPO BELLA PER ESSERE RENDERIZZATA DAL
+        TUO PC SCRAUSO!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[10].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 48832eb27b40db946a855a051fedc94a, type: 3}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[1].dialogueText
+      value: PREPARATI AD AFFRONTARE LA BOSS FIGHT MEGLIO BILANCIATA DELLA STORIA
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[2].dialogueText
+      value: "INFATTI IN QUESTO SCONTRO SAR\xD2 NERFATO AL MASSIMO MUHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[3].dialogueText
+      value: 'Prepaaaaaaaarati alla mia IRRRR.....
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[4].dialogueText
+      value: ....cra :(
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[5].dialogueText
+      value: "ATTACCO SUPERIORE FINALE \nEPICO SCONVOLGENTE\nDI FUOCO INVISIBILE"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[6].dialogueText
+      value: "ATTACCO SUPERIORE FINALE \nEPICO SCONVOLGENTE\nDI FUOCO INVISIBILE"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[7].dialogueText
+      value: '!!!!!!!!!!!!!!!!!!!!!1111!!!!!!!!!!!!!11!!1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[8].dialogueText
+      value: "LA MIA INFINITA POTENZA NON HA MINIMAMENTE A CHE FARE CON LA MIA INESISTENTE
+        CAPACIT\xC0 DI MOVIMENTO."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[9].dialogueText
+      value: RINGRAZIA CHE NON MI HANNO ANIMATO CHE TI DAVO UNA LABBRATA
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[10].dialogueText
+      value: "Senta signor illustrissimo, la jam \xE8 finita, il coder \xE8 impazzito,
+        BONA MERDE!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[3].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[4].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[5].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: _dialogue.Array.data[10].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724745907789789516, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_Size.x
+      value: 3.8094103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724745907789789516, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_Size.y
+      value: 3.8094103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724745907789789516, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.29716766
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724745907789789516, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.118866086
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132110913199092674, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204770745015955965, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_Name
+      value: Dragon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862236839791310610, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862236839791310610, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862236839791310610, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862236839791310610, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862236839791310610, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862236839791310610, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862236839791310610, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862236839791310610, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862236839791310610, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862236839791310610, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8970238487004039550, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f391e9ddedf700f4f8f65ab4a8432f08, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
