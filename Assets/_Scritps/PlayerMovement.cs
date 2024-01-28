@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 namespace InputAndMovement
 {
@@ -10,10 +12,20 @@ namespace InputAndMovement
         [SerializeField] public float _speed = 1;
         [SerializeField] public Rigidbody2D _rb;
         [SerializeField] SpriteRenderer _bodySprite;
+        private PlayerBehaviour _playerBehaviour;
         private float angle = 0;
         private Vector2 moveInputValue;
         private Target _target; //A chi chiamare qualcosa
+        private float _timer = 0;
+        private AudioClip _stepSound;
+        AudioSource _walkPitch;
 
+        private void Start()
+        {
+            _playerBehaviour = FindObjectOfType<PlayerBehaviour>();
+            _stepSound = _playerBehaviour.StepSound;
+            _walkPitch = AudioManager.AudioSource;
+        }
 
         public void Awake()
         {
@@ -28,10 +40,13 @@ namespace InputAndMovement
         {
             direction.Normalize();
             Debug.Log($"{direction.magnitude}");
-
             Vector2 deltaMove = direction * _speed * Time.deltaTime;
-
             transform.position = (Vector2)transform.position + deltaMove;
+        }
+
+        private void Update()
+        {
+            _timer += Time.deltaTime;
         }
 
         public void RotateTransform(Vector2 direction)
@@ -82,6 +97,16 @@ namespace InputAndMovement
 
         public void OnMove(InputValue value)
         {
+            if (_timer > .3f)
+            {
+                _walkPitch.pitch = _walkPitch.pitch - .1f + Random.Range(0f, .2f);
+                if (_walkPitch.pitch > 1.1f || _walkPitch.pitch < 0.9f)
+                {
+                    _walkPitch.pitch = 1f;
+                }
+                _walkPitch.PlayOneShot(_stepSound);
+                _timer = 0;
+            }
             moveInputValue = value.Get<Vector2>();
             //Debug.Log(moveInputValue);
         }
