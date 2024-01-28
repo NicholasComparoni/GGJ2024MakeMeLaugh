@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using InputAndMovement;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.Timeline;
 using UnityEngine.UI;
@@ -48,6 +49,7 @@ public class TeleportTarget : Target
         Teleporting();
         soundtrack.clip = _newSoundtrack;
         soundtrack.Play();
+        _player.anim.runtimeAnimatorController = _player._mcAnimationController;
         while (_timer < _blackScreenTime)
         {
             _timer += Time.deltaTime;
