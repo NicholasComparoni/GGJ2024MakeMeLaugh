@@ -74,3 +74,4 @@ crashlytics-build.properties
 #Rider
 .idea/
 Assets/Plugins/Editor/JetBrains*
+Packages/packages-lock.json
