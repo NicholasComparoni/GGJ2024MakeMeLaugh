@@ -6,13 +6,20 @@ public class CleaningTable : Target
 {
     [SerializeField] private Collider2D _mytriggerus;
     [SerializeField] public OpenDoorCheck _myController;
+
     [SerializeField] private SpriteRenderer _mysprite;
-    [SerializeField] private SpriteRenderer _mysprite2;
+
+    [SerializeField] private Sprite _myspriteDirty1;
+    [SerializeField] private Sprite _myspriteDirty2;
+    [SerializeField] private Sprite _myspriteClean;
     private bool _hasBeenCleaned = false;
+    private bool isA;
     [SerializeField]private int _cleanedTimes = 0;
     public void Cleaning()
     {
-        _mysprite.GetComponent<SpriteRenderer>();
+        _mysprite.sprite = isA ? _myspriteDirty1 : _myspriteDirty2;
+
+        isA = !isA;
 
         _cleanedTimes++;
 
@@ -21,8 +28,8 @@ public class CleaningTable : Target
             _hasBeenCleaned = true;
 
             _myController.allCleaned++;
-            
-            _mysprite.sprite = _mysprite2.sprite;
+
+            _mysprite.sprite = _myspriteClean;
         }
     }
 }

@@ -99,8 +99,12 @@ namespace InputAndMovement
 
             if (other.gameObject.TryGetComponent(out TeleportTarget teleportus))
             {
+                if(PickupTarget.hasBeenReached == true)
+                {
                 _target = teleportus;
                 StartCoroutine(teleportus.BlackScreenTransition());
+
+                }
                 _target = null;
             }
 
