@@ -289,6 +289,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6083798948418168568, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 29.900024
+      objectReference: {fileID: 0}
     - target: {fileID: 6330652341165456237, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
       propertyPath: m_Name
       value: DialogueCanvas
@@ -328,7 +332,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -711,6 +715,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 533404374311516595, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
+      propertyPath: m_Volume
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 1616069167890357811, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
       propertyPath: _stepSound
       value: 
@@ -727,6 +735,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ebff67d893fa975429b633f7deb8b12c, type: 3}
+    - target: {fileID: 5257119468039637073, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257119468039637073, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257119468039637073, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ce87c257b1082f4408578582daeaed93, type: 3}
     - target: {fileID: 6270589186824844410, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
       propertyPath: orthographic size
       value: 5

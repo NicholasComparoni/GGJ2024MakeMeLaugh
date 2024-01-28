@@ -17,13 +17,13 @@ namespace InputAndMovement
         private Target _target; //A chi chiamare qualcosa
         private float _timer = 0;
         private AudioClip _stepSound;
-        AudioSource _tempPitch;
+        AudioSource _walkPitch;
 
         private void Start()
         {
             _playerBehaviour = FindObjectOfType<PlayerBehaviour>();
             _stepSound = _playerBehaviour.StepSound;
-            _tempPitch = AudioManager.AudioSource;
+            _walkPitch = AudioManager.AudioSource;
         }
 
         public void Move(Vector2 direction)
@@ -70,11 +70,14 @@ namespace InputAndMovement
         {
             if (_timer > .3f)
             {
-                _tempPitch.pitch = _tempPitch.pitch - .1f + Random.Range(0f, .2f);
-                _tempPitch.PlayOneShot(_stepSound);
+                _walkPitch.pitch = _walkPitch.pitch - .1f + Random.Range(0f, .2f);
+                if (_walkPitch.pitch > 1.1f || _walkPitch.pitch < 0.9f)
+                {
+                    _walkPitch.pitch = 1f;
+                }
+                _walkPitch.PlayOneShot(_stepSound);
                 _timer = 0;
             }
-
             moveInputValue = value.Get<Vector2>();
             //Debug.Log(moveInputValue);
         }
