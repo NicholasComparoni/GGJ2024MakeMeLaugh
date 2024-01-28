@@ -12,6 +12,22 @@ PrefabInstance:
       propertyPath: _charName
       value: MilkoBot
       objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _lastDialogueText
+      value: Se mi scuoti forte faccio ancje il formaggio.
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[0].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: ae29a3636a86d3640b9aedfb7ad6741a, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[0].dialogueText
+      value: "Vedo che ti \xE8 piaciuto il mio latte, se ti giri te ne faccio ancora.\r\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1

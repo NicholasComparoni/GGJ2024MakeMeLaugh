@@ -223,6 +223,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1431254798}
     m_Modifications:
+    - target: {fileID: 3110415325737341227, guid: 24747876038c40044847992f58d8b574, type: 3}
+      propertyPath: _chestSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 819a72efb7105d349bf5afbc91aefc16, type: 3}
     - target: {fileID: 5963350090217549024, guid: 24747876038c40044847992f58d8b574, type: 3}
       propertyPath: m_Name
       value: Chest (2)
@@ -364,11 +368,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8768624416902435044, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 8768624416902435044, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.18
+      value: 18.5
       objectReference: {fileID: 0}
     - target: {fileID: 8768624416902435044, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
       propertyPath: m_LocalPosition.z
@@ -542,6 +546,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1431254798}
     m_Modifications:
+    - target: {fileID: 3110415325737341227, guid: 24747876038c40044847992f58d8b574, type: 3}
+      propertyPath: _chestSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9d82e78376828b448938af80875a27b0, type: 3}
     - target: {fileID: 5963350090217549024, guid: 24747876038c40044847992f58d8b574, type: 3}
       propertyPath: m_Name
       value: Chest (9)
@@ -749,6 +757,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1431254798}
     m_Modifications:
+    - target: {fileID: 3110415325737341227, guid: 24747876038c40044847992f58d8b574, type: 3}
+      propertyPath: _chestSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 819a72efb7105d349bf5afbc91aefc16, type: 3}
     - target: {fileID: 5963350090217549024, guid: 24747876038c40044847992f58d8b574, type: 3}
       propertyPath: m_Name
       value: Chest (5)
@@ -811,6 +823,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3544973260811285148, guid: 0d674acda15310f4e92d790eb85e049b, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3544973260811285148, guid: 0d674acda15310f4e92d790eb85e049b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0757b4972297f7f4eb70c61c1db8030a, type: 3}
+    - target: {fileID: 3544973260811285148, guid: 0d674acda15310f4e92d790eb85e049b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3544973260811285148, guid: 0d674acda15310f4e92d790eb85e049b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3544973260811285148, guid: 0d674acda15310f4e92d790eb85e049b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3846405688691045247, guid: 0d674acda15310f4e92d790eb85e049b, type: 3}
       propertyPath: m_Name
       value: BlackScreenCanvas
@@ -1485,6 +1517,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1431254798}
     m_Modifications:
+    - target: {fileID: 3110415325737341227, guid: 24747876038c40044847992f58d8b574, type: 3}
+      propertyPath: _chestSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a997abf0d7bbf274bba857a5a354b0fb, type: 3}
     - target: {fileID: 5963350090217549024, guid: 24747876038c40044847992f58d8b574, type: 3}
       propertyPath: m_Name
       value: Chest (3)
@@ -1578,6 +1614,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1431254798}
     m_Modifications:
+    - target: {fileID: 3110415325737341227, guid: 24747876038c40044847992f58d8b574, type: 3}
+      propertyPath: _chestSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a3e9bb02e22a2544803a4b655fd18c9, type: 3}
     - target: {fileID: 5963350090217549024, guid: 24747876038c40044847992f58d8b574, type: 3}
       propertyPath: m_Name
       value: Chest (8)

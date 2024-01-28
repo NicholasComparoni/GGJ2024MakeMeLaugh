@@ -63,6 +63,7 @@ public class TeleportTarget : Target
             soundtrack.volume = newVolume;
             yield return null;
         }
+        BlackScreenCanvas.Instance.gameObject.SetActive(false);
         _player.enabled = true;
     }
 }
