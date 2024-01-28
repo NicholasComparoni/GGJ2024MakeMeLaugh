@@ -1,6 +1,8 @@
 using System;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace InputAndMovement
@@ -11,7 +13,8 @@ namespace InputAndMovement
         [SerializeField] public Animator anim;
         [SerializeField] public float _speed = 1;
         [SerializeField] public Rigidbody2D _rb;
-        [SerializeField] SpriteRenderer _bodySprite;
+        [SerializeField] private SpriteRenderer _bodySprite;
+        public RuntimeAnimatorController _mcAnimationController;
         private PlayerBehaviour _playerBehaviour;
         private float angle = 0;
         private Vector2 moveInputValue;
