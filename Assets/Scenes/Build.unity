@@ -223,6 +223,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1431254798}
     m_Modifications:
+    - target: {fileID: 3110415325737341227, guid: 24747876038c40044847992f58d8b574, type: 3}
+      propertyPath: _chestSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 819a72efb7105d349bf5afbc91aefc16, type: 3}
     - target: {fileID: 5963350090217549024, guid: 24747876038c40044847992f58d8b574, type: 3}
       propertyPath: m_Name
       value: Chest (2)
@@ -485,6 +489,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1431254798}
     m_Modifications:
+    - target: {fileID: 3110415325737341227, guid: 24747876038c40044847992f58d8b574, type: 3}
+      propertyPath: _chestSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9d82e78376828b448938af80875a27b0, type: 3}
     - target: {fileID: 5963350090217549024, guid: 24747876038c40044847992f58d8b574, type: 3}
       propertyPath: m_Name
       value: Chest (9)
@@ -635,6 +643,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1431254798}
     m_Modifications:
+    - target: {fileID: 3110415325737341227, guid: 24747876038c40044847992f58d8b574, type: 3}
+      propertyPath: _chestSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 819a72efb7105d349bf5afbc91aefc16, type: 3}
     - target: {fileID: 5963350090217549024, guid: 24747876038c40044847992f58d8b574, type: 3}
       propertyPath: m_Name
       value: Chest (5)
@@ -1192,6 +1204,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1431254798}
     m_Modifications:
+    - target: {fileID: 3110415325737341227, guid: 24747876038c40044847992f58d8b574, type: 3}
+      propertyPath: _chestSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a997abf0d7bbf274bba857a5a354b0fb, type: 3}
     - target: {fileID: 5963350090217549024, guid: 24747876038c40044847992f58d8b574, type: 3}
       propertyPath: m_Name
       value: Chest (3)
@@ -1285,6 +1301,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1431254798}
     m_Modifications:
+    - target: {fileID: 3110415325737341227, guid: 24747876038c40044847992f58d8b574, type: 3}
+      propertyPath: _chestSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a3e9bb02e22a2544803a4b655fd18c9, type: 3}
     - target: {fileID: 5963350090217549024, guid: 24747876038c40044847992f58d8b574, type: 3}
       propertyPath: m_Name
       value: Chest (8)
