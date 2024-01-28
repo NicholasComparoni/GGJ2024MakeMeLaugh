@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CleaningTable : Target
 {
+    public ExclamativePoint _xclPoint;
     [SerializeField] private Collider2D _mytriggerus;
     [SerializeField] public OpenDoorCheck _myController;
 
@@ -12,7 +13,7 @@ public class CleaningTable : Target
     [SerializeField] private Sprite _myspriteDirty1;
     [SerializeField] private Sprite _myspriteDirty2;
     [SerializeField] private Sprite _myspriteClean;
-    private bool _hasBeenCleaned = false;
+    public bool _hasBeenCleaned = false;
     private bool isA;
     [SerializeField]private int _cleanedTimes = 0;
     public void Cleaning()
@@ -27,7 +28,7 @@ public class CleaningTable : Target
         {
             _hasBeenCleaned = true;
 
-            _myController.allCleaned++;
+            //_myController.allCleaned++;
 
             _mysprite.sprite = _myspriteClean;
         }

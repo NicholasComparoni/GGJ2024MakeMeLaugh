@@ -9,6 +9,7 @@ public class Chest : Target
     [SerializeField] public SpriteRenderer _mySprite;
     [SerializeField] private AudioClip _chestSound;
     [SerializeField] private bool _hasKey;
+    public ExclamativePoint _xclPoint;
     private AudioSource _audioSource;
     private bool isChestOpen = false;
     
@@ -17,7 +18,7 @@ public class Chest : Target
 
     public void Start()
     {
-        _mySprite = GetComponentInChildren<SpriteRenderer>();
+        _mySprite = GetComponentsInChildren<SpriteRenderer>()[0];
         _audioSource = GetComponent<AudioSource>();
     }
     public void OpenChest()

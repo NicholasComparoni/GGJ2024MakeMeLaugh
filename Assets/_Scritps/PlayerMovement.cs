@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -106,7 +107,6 @@ namespace InputAndMovement
                 {
                 _target = teleportus;
                 StartCoroutine(teleportus.BlackScreenTransition());
-
                 }
                 _target = null;
             }
@@ -118,9 +118,22 @@ namespace InputAndMovement
             }
 
             if (other.gameObject.TryGetComponent(out Chest chest))
+            {
                 _target = chest;
+                if (!PickupTarget.hasBeenReached)
+                {
+                    chest._xclPoint.gameObject.SetActive(true);
+                }
+            }
+
             if (other.gameObject.TryGetComponent(out CleaningTable table))
+            {
                 _target = table;
+                if (!table._hasBeenCleaned)
+                {
+                    table._xclPoint.gameObject.SetActive(true);
+                }
+            }
         }
 
         private void OnTriggerExit2D(Collider2D other)
@@ -129,6 +142,14 @@ namespace InputAndMovement
             if (other.gameObject.TryGetComponent(out CharacterTarget character))
             {
                 character._xclPoint.gameObject.SetActive(false);
+            }
+            if (other.gameObject.TryGetComponent(out Chest chest))
+            {
+                chest._xclPoint.gameObject.SetActive(false);
+            }
+            if (other.gameObject.TryGetComponent(out CleaningTable table))
+            {
+                table._xclPoint.gameObject.SetActive(false);
             }
             _target = null;
         }

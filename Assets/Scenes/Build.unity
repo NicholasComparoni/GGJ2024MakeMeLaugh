@@ -948,6 +948,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 973675728185688668, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.3962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 973675728185688668, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.3962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 973675728185688668, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.3962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 973675728185688668, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4284835173
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843376321523622931, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843376321523622931, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843376321523622931, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843376321523622931, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     - target: {fileID: 4796668842980469884, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1032,10 +1064,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 6330652341165456237, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 6988245646902236396, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6988245646902236396, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6988245646902236396, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6988245646902236396, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499219201326289970, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f780f978fe7b8d3448d1e150e26cff28, type: 3}
+    - target: {fileID: 9204413393019618938, guid: 520b78e5274a50b4fa04f1a501ee6fde, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 35b795fa861e1ea4482efc7b52162440, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
