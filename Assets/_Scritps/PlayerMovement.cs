@@ -108,6 +108,8 @@ namespace InputAndMovement
 
             if (other.gameObject.TryGetComponent(out Chest chest))
                 _target = chest;
+            if (other.gameObject.TryGetComponent(out CleaningTable table))
+                _target = table;
         }
 
         private void OnTriggerExit2D(Collider2D other)
@@ -120,7 +122,6 @@ namespace InputAndMovement
             //Debug.Log("Patate al forno");
             if (_target?.GetType() == typeof(PickupTarget))
             {
-                Debug.Log("PieroGorgi");
                 PickupTarget target = (PickupTarget)_target;
                 target.PickUp();
                 _target = null;
@@ -137,6 +138,12 @@ namespace InputAndMovement
                 Chest target = (Chest)_target;
                 target.OpenChest();
                 _target = null; 
+            }
+            if (_target?.GetType() == typeof(CleaningTable))
+            {
+                CleaningTable target = (CleaningTable)_target;
+                target.Cleaning();
+                _target = null;
             }
 
         }
