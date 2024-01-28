@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using InputAndMovement;
 using UnityEngine;
+using UnityEngine.Timeline;
 using UnityEngine.UI;
 
 public class TeleportTarget : Target
@@ -9,6 +10,7 @@ public class TeleportTarget : Target
     [SerializeField] private GameObject _arrivePoint;
     [SerializeField] private float _transitionTime;
     [SerializeField] private float _blackScreenTime;
+    [SerializeField] private AudioClip _newSoundtrack;
     private PlayerMovement _player;
     private float _timer;
 
@@ -40,6 +42,8 @@ public class TeleportTarget : Target
         }
         _timer = 0;
         Teleporting();
+        Camera.main.gameObject.GetComponent<AudioSource>().clip = _newSoundtrack;
+        Camera.main.gameObject.GetComponent<AudioSource>().Play();
         while (_timer < _blackScreenTime)
         {
             _timer += Time.deltaTime;
