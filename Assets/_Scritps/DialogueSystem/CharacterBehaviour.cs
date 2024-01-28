@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class CharacterBehaviour : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class CharacterBehaviour : MonoBehaviour
     [Serializable]
     struct DialogueNode
     {
-        public float speakingTime;
+        [FormerlySerializedAs("soundToPLay")] public AudioClip soundToPlay;
         public Speaker currentSpeaker;
         [TextArea(3, 10)] public string dialogueText;
     }
@@ -41,6 +42,10 @@ public class CharacterBehaviour : MonoBehaviour
         {
             if (_dialogueIndex < _dialogue.Count)
             {
+                if (_dialogue[_dialogueIndex].soundToPlay != null)
+                {
+                    gameObject.GetComponent<AudioSource>().PlayOneShot(_dialogue[_dialogueIndex].soundToPlay);
+                }
                 if (_dialogue[_dialogueIndex].currentSpeaker == Speaker.Character)
                 {
                     nameBox.GetComponentInChildren<TMP_Text>().text = _charName;
@@ -63,7 +68,7 @@ public class CharacterBehaviour : MonoBehaviour
         }
         else
         {
-            if (_dialogueIndex > 0)
+            if (_dialogueIndex > 0 && _lastDialogueText != "")
             {
                 nameBox.GetComponentInChildren<TMP_Text>().text = _charName;
                 textBox.GetComponentInChildren<TMP_Text>().text = _lastDialogueText;
