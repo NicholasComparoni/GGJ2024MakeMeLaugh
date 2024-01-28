@@ -5,7 +5,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class PickupTarget : Target
 {
-    public bool hasBeenReached = false;
+    public static bool hasBeenReached = false;
 
     [SerializeField] public Collider2D _mytrigger;         //il trigger dentro la quale devi entrare
 
