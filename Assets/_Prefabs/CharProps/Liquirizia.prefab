@@ -12,6 +12,66 @@ PrefabInstance:
       propertyPath: _charName
       value: Liquirizia
       objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _lastDialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d82eb00d641b4f84f9a82eb2e718e3b9, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _lastDialogueText
+      value: AHAHAHHAHAHHAHA
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[1].soundToPlay
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[2].soundToPlay
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[0].dialogueText
+      value: "Il mio stagno \xE8 molto asciutto ultimamente..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[1].dialogueText
+      value: Mi vorresti dare una mano?
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[2].dialogueText
+      value: Dipende, quanto vuoi l'ora?
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[3].dialogueText
+      value: "S\xEC."
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[4].dialogueText
+      value: Ah ok.
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[5].dialogueText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[1].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[2].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[3].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[4].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1

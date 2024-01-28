@@ -12,6 +12,34 @@ PrefabInstance:
       propertyPath: _charName
       value: Debora
       objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _lastDialogueText
+      value: QUACK.
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[0].dialogueText
+      value: Quack...
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[1].dialogueText
+      value: "Tuitto qui ci\xF2 che hai da dire?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[2].dialogueText
+      value: Quack... Quack...
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[1].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[2].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1
