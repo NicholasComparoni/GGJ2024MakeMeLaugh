@@ -47,8 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _arrivePoint: {fileID: 4636201460564929694}
-  _transitionTime: 2
-  _blackScreenTime: 1
+  _transitionTime: 3
+  _blackScreenTime: 2
+  _newSoundtrack: {fileID: 8300000, guid: 2b371beecbc57de49b107c420c8bbe5c, type: 3}
 --- !u!61 &6957721041795336842
 BoxCollider2D:
   m_ObjectHideFlags: 0

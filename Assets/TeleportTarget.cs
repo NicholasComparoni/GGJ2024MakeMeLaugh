@@ -27,23 +27,27 @@ public class TeleportTarget : Target
 
     public IEnumerator BlackScreenTransition()
     {
+        AudioSource soundtrack = Camera.main.gameObject.GetComponent<AudioSource>();
         BlackScreenCanvas.Instance.gameObject.SetActive(true);
         Image img = BlackScreenCanvas.Instance.gameObject.GetComponentInChildren<Image>();
         _player.StopVelocity();
         _player.enabled = false;
         _timer = 0;
-        float startValue = img.color.a;
+        float startAlphaValue = img.color.a;
+        float startVolumeValue = soundtrack.volume;
         while (_timer < _transitionTime)
         {
             _timer += Time.deltaTime;
-            float newAlpha = Mathf.Lerp(startValue, 1, _timer / _transitionTime);
+            float newAlpha = Mathf.Lerp(startAlphaValue, 1, _timer / _transitionTime);
+            float newVolume = Mathf.Lerp(startVolumeValue, 0, _timer / _transitionTime);
+            soundtrack.volume = newVolume;
             img.color = new Color(img.color.r, img.color.g, img.color.b, newAlpha);
             yield return null;
         }
         _timer = 0;
         Teleporting();
-        Camera.main.gameObject.GetComponent<AudioSource>().clip = _newSoundtrack;
-        Camera.main.gameObject.GetComponent<AudioSource>().Play();
+        soundtrack.clip = _newSoundtrack;
+        soundtrack.Play();
         while (_timer < _blackScreenTime)
         {
             _timer += Time.deltaTime;
@@ -53,8 +57,10 @@ public class TeleportTarget : Target
         while (_timer < _transitionTime)
         {
             _timer += Time.deltaTime;
-            float newAlpha = Mathf.Lerp(1, startValue, _timer / _transitionTime);
+            float newAlpha = Mathf.Lerp(1, startAlphaValue, _timer / _transitionTime);
             img.color = new Color(img.color.r, img.color.g, img.color.b, newAlpha);
+            float newVolume = Mathf.Lerp(0, startVolumeValue, _timer / _transitionTime);
+            soundtrack.volume = newVolume;
             yield return null;
         }
         _player.enabled = true;
