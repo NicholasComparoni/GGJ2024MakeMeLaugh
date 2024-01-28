@@ -2,12 +2,14 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class CharacterBehaviour : MonoBehaviour
 {
     [SerializeField] private string _charName;
     [SerializeField] private List<DialogueNode> _dialogue;
     [SerializeField] [TextArea] private string _lastDialogueText;
+    [SerializeField] private AudioClip _lastDialogueClip;
     public static CharacterBehaviour _currentCharacterInteraction;
     private int _dialogueIndex = 0;
     private bool _isFirtInteraction = true;
@@ -15,7 +17,7 @@ public class CharacterBehaviour : MonoBehaviour
     [Serializable]
     struct DialogueNode
     {
-        public float speakingTime;
+        [FormerlySerializedAs("soundToPLay")] public AudioClip soundToPlay;
         public Speaker currentSpeaker;
         [TextArea(3, 10)] public string dialogueText;
     }
@@ -41,6 +43,10 @@ public class CharacterBehaviour : MonoBehaviour
         {
             if (_dialogueIndex < _dialogue.Count)
             {
+                if (_dialogue[_dialogueIndex].soundToPlay != null)
+                {
+                    gameObject.GetComponent<AudioSource>().PlayOneShot(_dialogue[_dialogueIndex].soundToPlay);
+                }
                 if (_dialogue[_dialogueIndex].currentSpeaker == Speaker.Character)
                 {
                     nameBox.GetComponentInChildren<TMP_Text>().text = _charName;
@@ -63,10 +69,11 @@ public class CharacterBehaviour : MonoBehaviour
         }
         else
         {
-            if (_dialogueIndex > 0)
+            if (_dialogueIndex > 0 && _lastDialogueText != "")
             {
                 nameBox.GetComponentInChildren<TMP_Text>().text = _charName;
                 textBox.GetComponentInChildren<TMP_Text>().text = _lastDialogueText;
+                gameObject.GetComponent<AudioSource>().PlayOneShot(_lastDialogueClip);
                 _dialogueIndex = 0;
             }
             else

@@ -479,9 +479,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _lastDialogueText
+      value: Okey
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[0].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 48832eb27b40db946a855a051fedc94a, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[1].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: e989c1336bfdc7e4896f0f73b4c1395b, type: 3}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[0].dialogueText
       value: zbfdzdfhfzfdzfbn
@@ -500,7 +512,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[1].currentSpeaker
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400698637135487393, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -541,6 +557,10 @@ PrefabInstance:
     - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7413276524649070275, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7728384071963477568, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_Name
@@ -603,6 +623,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7171157397503976051, guid: bbc8868c594e992498f6b23d10cbad85, type: 3}
+      propertyPath: _hasKey
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171157397503976051, guid: bbc8868c594e992498f6b23d10cbad85, type: 3}
+      propertyPath: _chestSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a3e9bb02e22a2544803a4b655fd18c9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -644,9 +672,25 @@ PrefabInstance:
       propertyPath: _playerName
       value: Magika
       objectReference: {fileID: 0}
+    - target: {fileID: 2041915796077418438, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041915796077418438, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041915796077418438, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2119955667022692008, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
       propertyPath: m_Name
       value: Walk Ahead 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2421320692092559879, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4637544133392967820, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
       propertyPath: m_Sprite
@@ -702,11 +746,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8768624416902435044, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.38
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8768624416902435044, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.26
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8768624416902435044, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
       propertyPath: m_LocalPosition.z
@@ -884,6 +928,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3110415325737341227, guid: 24747876038c40044847992f58d8b574, type: 3}
+      propertyPath: _chestSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8aa2661f70889df4880aaa84994930c1, type: 3}
+    - target: {fileID: 3110415325737341227, guid: 24747876038c40044847992f58d8b574, type: 3}
+      propertyPath: _volumeMultiplier
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5963350090217549024, guid: 24747876038c40044847992f58d8b574, type: 3}
       propertyPath: m_Name
       value: Chest

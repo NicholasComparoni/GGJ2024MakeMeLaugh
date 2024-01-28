@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Chest : Target
 {
-    [SerializeField] private Collider2D _mytrigger;
     [SerializeField] public List<Sprite> _sprites;
     [SerializeField] public SpriteRenderer _mySprite;
     [SerializeField] private AudioClip _chestSound;
-    [SerializeField] private bool hasKey;
+    [SerializeField] private bool _hasKey;
+    private AudioSource _audioSource;
     private bool isChestOpen = false;
     
 
@@ -17,27 +18,38 @@ public class Chest : Target
     public void Start()
     {
         _mySprite = GetComponentInChildren<SpriteRenderer>();
-        _mytrigger = GetComponent<Collider2D>();
+        _audioSource = GetComponent<AudioSource>();
     }
     public void OpenChest()
     {
-        if (hasKey)
+        if (_hasKey)
         {
             _mySprite.sprite = _sprites[0];
-            
 
             PickupTarget target = gameObject.AddComponent<PickupTarget>();
+            if (GetComponents<PickupTarget>().Length > 1)
+            {
+                Destroy(gameObject.GetComponents<PickupTarget>()[0]);
+            }
 
             if (isChestOpen)
                 target.PickUp();
+            else
+            {
+                _audioSource.PlayOneShot(_chestSound);
+            }
 
             isChestOpen=true;
 
         }
         else
         {
+            if (!isChestOpen)
+            {
+                _audioSource.PlayOneShot(_chestSound);
+            }
             _mySprite.sprite = _sprites[1];
-
+            isChestOpen = true;
         }
 
 

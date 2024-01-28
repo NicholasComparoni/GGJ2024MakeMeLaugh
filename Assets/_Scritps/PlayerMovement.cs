@@ -92,6 +92,7 @@ namespace InputAndMovement
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            InteractionCanvas.Instance.gameObject.SetActive(true);
             Debug.Log(other.name);
             if (other.gameObject.TryGetComponent(out PickupTarget pickup))
                 _target = pickup;
@@ -104,7 +105,10 @@ namespace InputAndMovement
             }
 
             if (other.gameObject.TryGetComponent(out CharacterTarget character))
+            {
                 _target = character;
+                character._xclPoint.gameObject.SetActive(true);
+            }
 
             if (other.gameObject.TryGetComponent(out Chest chest))
                 _target = chest;
@@ -114,11 +118,17 @@ namespace InputAndMovement
 
         private void OnTriggerExit2D(Collider2D other)
         {
+            InteractionCanvas.Instance.gameObject.SetActive(false);
+            if (other.gameObject.TryGetComponent(out CharacterTarget character))
+            {
+                character._xclPoint.gameObject.SetActive(false);
+            }
             _target = null;
         }
 
         private void OnInteractionButton()
         {
+            InteractionCanvas.Instance.gameObject.SetActive(false);
             //Debug.Log("Patate al forno");
             if (_target?.GetType() == typeof(PickupTarget))
             {
