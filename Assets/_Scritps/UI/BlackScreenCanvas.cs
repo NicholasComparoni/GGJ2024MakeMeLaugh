@@ -1,20 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class BlackScreenCanvas : MonoBehaviour
 {
-    [SerializeField] public  GameObject _panel;
+    public static BlackScreenCanvas Instance;
 
-    //public void Awake()
-    //{
-    //    if (_panel != null)
-    //        //Debug.LogError("You can't have more than 2 instances BlackScreenCanvas in the same scene");
-    //        _panel = this;
-    //}
-    public void Start()
+    private void Awake()
     {
-        _panel.gameObject.SetActive(false);
+        if (Instance != null)
+        {
+            Debug.LogError($"You can't have more than one object of type {gameObject.GetType()}");
+        }
+
+        Instance = this;
     }
 
+    private void Start()
+    {
+        Instance.gameObject.SetActive(false);
+    }
 }

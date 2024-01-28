@@ -1,10 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.TextCore.Text;
 
 namespace InputAndMovement
 {
@@ -17,7 +12,7 @@ namespace InputAndMovement
         [SerializeField] SpriteRenderer _bodySprite;
         private float angle = 0;
         private Vector2 moveInputValue;
-        private Target _target;            //A chi chiamare qualcosa
+        private Target _target; //A chi chiamare qualcosa
 
 
         public void Awake()
@@ -90,6 +85,7 @@ namespace InputAndMovement
             moveInputValue = value.Get<Vector2>();
             //Debug.Log(moveInputValue);
         }
+
         public void StopVelocity()
         {
             _rb.velocity = Vector2.zero;
@@ -116,13 +112,14 @@ namespace InputAndMovement
             if (other.gameObject.TryGetComponent(out TeleportTarget teleportus))
             {
                 _target = teleportus;
-                teleportus.Teleporting();
+                StartCoroutine(teleportus.BlackScreenTransition());
                 _target = null;
             }
-            
+
             if (other.gameObject.TryGetComponent(out CharacterTarget character))
                 _target = character;
         }
+
         private void OnTriggerExit2D(Collider2D other)
         {
             _target = null;
@@ -131,7 +128,6 @@ namespace InputAndMovement
         private void OnInteractionButton()
         {
             //Debug.Log("Patate al forno");
-
             if (_target?.GetType() == typeof(PickupTarget))
             {
                 PickupTarget target = (PickupTarget)_target;
@@ -147,15 +143,13 @@ namespace InputAndMovement
             }
         }
 
-
         private void OnDialogueSkip()
         {
             if (DialogueCanvas.Instance.gameObject.activeSelf)
             {
-                CharacterBehaviour._currentCharacterInteraction.Speak(CharacterBehaviour._currentCharacterInteraction.GetComponent<CharacterTarget>());
+                CharacterBehaviour._currentCharacterInteraction.Speak(CharacterBehaviour._currentCharacterInteraction
+                    .GetComponent<CharacterTarget>());
             }
         }
-
-
     }
 }
