@@ -55,44 +55,6 @@ namespace InputAndMovement
             anim.SetFloat("GoHorizontal", moveInputValue.x);
 
 
-            if (moveInputValue.y > 0.1f)
-            {
-                //angle = 0f;
-                Debug.Log("Vado a Nord");
-                // anim.SetFloat("GoVertical", moveInputValue.y);
-
-            }
-            else if (moveInputValue.y < -0.1f)
-            {
-                
-                Debug.Log("Vado a Sud");
-
-                //angle = 180f;
-                //anim.SetFloat("GoVertical", moveInputValue.y);
-            }
-            else if (moveInputValue.x > 0.1f)
-            {
-                Debug.Log("Vado a Destra");
-
-                //angle = -90f;
-     
-                //anim.SetFloat("GoHorizontal", moveInputValue.x);
-
-
-            }
-            else if (moveInputValue.x < -0.1f)
-            {
-                Debug.Log("Vado a Sinistra");
-
-                //angle = 90f;
-
-                //anim.SetFloat("GoHorizontal", moveInputValue.x);
-
-            }
-            //else if (_rb.velocity.x == 0 && _rb.velocity.y == 0)
-
-            //else if (moveInputValue.y < 0.1f && moveInputValue.y > -0.1f && moveInputValue.x > 0.1f && moveInputValue.x < -0.1f);
-            //_bodySprite.transform.rotation = Quaternion.Euler(0f, 0f, angle);
         }
 
         public void OnMove(InputValue value)
@@ -143,6 +105,9 @@ namespace InputAndMovement
 
             if (other.gameObject.TryGetComponent(out CharacterTarget character))
                 _target = character;
+
+            if (other.gameObject.TryGetComponent(out Chest chest))
+                _target = chest;
         }
 
         private void OnTriggerExit2D(Collider2D other)
@@ -155,6 +120,7 @@ namespace InputAndMovement
             //Debug.Log("Patate al forno");
             if (_target?.GetType() == typeof(PickupTarget))
             {
+                Debug.Log("PieroGorgi");
                 PickupTarget target = (PickupTarget)_target;
                 target.PickUp();
                 _target = null;
@@ -166,6 +132,13 @@ namespace InputAndMovement
                 target.StartDialogue();
                 _target = null;
             }
+            if (_target?.GetType() == typeof(Chest))
+            {
+                Chest target = (Chest)_target;
+                target.OpenChest();
+                _target = null; 
+            }
+
         }
 
         private void OnDialogueSkip()

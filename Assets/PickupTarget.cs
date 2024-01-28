@@ -6,14 +6,19 @@ using static UnityEngine.GraphicsBuffer;
 public class PickupTarget : Target
 {
     public bool hasBeenReached = false;
-   
-    [SerializeField] private Collider2D _mytrigger;         //il trigger dentro la quale devi entrare
+
+    [SerializeField] public Collider2D _mytrigger;         //il trigger dentro la quale devi entrare
 
 
     public void PickUp()
     {
-        Debug.Log("Preso il pipo");
+        //Debug.Log("Preso il pipo");
         hasBeenReached = true;
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
+        if (TryGetComponent<Chest>(out Chest chest))
+        {
+            chest._mySprite.sprite = chest._sprites[2];
+        }
     }
 }
+
