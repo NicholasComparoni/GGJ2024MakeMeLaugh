@@ -17,7 +17,7 @@ public class Chest : Target
     public void Start()
     {
         _mySprite = GetComponentInChildren<SpriteRenderer>();
-
+        _mytrigger = GetComponent<Collider2D>();
     }
     public void OpenChest()
     {
