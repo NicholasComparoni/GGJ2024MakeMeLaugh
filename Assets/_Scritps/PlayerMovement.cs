@@ -8,6 +8,7 @@ namespace InputAndMovement
     [RequireComponent(typeof(Rigidbody2D))]
     public class PlayerMovement : MonoBehaviour
     {
+        [SerializeField] public Animator anim;
         [SerializeField] public float _speed = 1;
         [SerializeField] public Rigidbody2D _rb;
         [SerializeField] SpriteRenderer _bodySprite;
@@ -26,6 +27,10 @@ namespace InputAndMovement
             _walkPitch = AudioManager.AudioSource;
         }
 
+        public void Awake()
+        {
+            anim = GetComponent<Animator>();
+        }
         public void Move(Vector2 direction)
         {
             MoveTransform(direction);
@@ -46,24 +51,48 @@ namespace InputAndMovement
 
         public void RotateTransform(Vector2 direction)
         {
+            anim.SetFloat("GoVertical", moveInputValue.y);
+            anim.SetFloat("GoHorizontal", moveInputValue.x);
+
+
             if (moveInputValue.y > 0.1f)
             {
-                angle = 0f;
+                //angle = 0f;
+                Debug.Log("Vado a Nord");
+                // anim.SetFloat("GoVertical", moveInputValue.y);
+
             }
             else if (moveInputValue.y < -0.1f)
             {
-                angle = 180f;
+                
+                Debug.Log("Vado a Sud");
+
+                //angle = 180f;
+                //anim.SetFloat("GoVertical", moveInputValue.y);
             }
             else if (moveInputValue.x > 0.1f)
             {
-                angle = -90f;
+                Debug.Log("Vado a Destra");
+
+                //angle = -90f;
+     
+                //anim.SetFloat("GoHorizontal", moveInputValue.x);
+
+
             }
             else if (moveInputValue.x < -0.1f)
             {
-                angle = 90f;
-            }
+                Debug.Log("Vado a Sinistra");
 
-            _bodySprite.transform.rotation = Quaternion.Euler(0f, 0f, angle);
+                //angle = 90f;
+
+                //anim.SetFloat("GoHorizontal", moveInputValue.x);
+
+            }
+            //else if (_rb.velocity.x == 0 && _rb.velocity.y == 0)
+
+            //else if (moveInputValue.y < 0.1f && moveInputValue.y > -0.1f && moveInputValue.x > 0.1f && moveInputValue.x < -0.1f);
+            //_bodySprite.transform.rotation = Quaternion.Euler(0f, 0f, angle);
         }
 
         public void OnMove(InputValue value)
