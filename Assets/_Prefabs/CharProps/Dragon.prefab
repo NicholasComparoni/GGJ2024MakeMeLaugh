@@ -42,10 +42,10 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 48832eb27b40db946a855a051fedc94a, type: 3}
     - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
       propertyPath: _lastDialogueText
-      value: 'VATTENE! FAI ALT + F4 E NON MOSTRARTI PIU'' IN QUESTA GROTTA!
+      value: 'VATTENE! FAI <b>ALT + F4</b> E NON MOSTRARTI PIU'' IN QUESTA GROTTA!
 
         (Per
-        un taso UI serve una donazione di almeno 100 euro al coder :)'
+        un tasto UI serve una donazione di almeno 100 euro al coder :)'
       objectReference: {fileID: 0}
     - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
       propertyPath: _dialogue.Array.size
