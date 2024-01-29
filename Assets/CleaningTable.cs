@@ -13,23 +13,23 @@ public class CleaningTable : Target
     [SerializeField] private Sprite _myspriteDirty1;
     [SerializeField] private Sprite _myspriteDirty2;
     [SerializeField] private Sprite _myspriteClean;
-    public bool _hasBeenCleaned = false;
+    private bool _hasBeenCleaned = false;
+
+    public bool HasBeenCleaned { get { return _hasBeenCleaned; } private set { } }
+
     private bool isA;
-    [SerializeField]private int _cleanedTimes = 0;
+    [SerializeField] private int _cleanedTimes = 0;
+
     public void Cleaning()
     {
         _mysprite.sprite = isA ? _myspriteDirty1 : _myspriteDirty2;
-
         isA = !isA;
-
         _cleanedTimes++;
 
         if (_cleanedTimes == 5)
         {
             _hasBeenCleaned = true;
-
-            //_myController.allCleaned++;
-
+            _myController.OpenDoor();
             _mysprite.sprite = _myspriteClean;
         }
     }

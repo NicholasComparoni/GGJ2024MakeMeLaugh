@@ -125,7 +125,7 @@ namespace InputAndMovement
             if (other.gameObject.TryGetComponent(out CleaningTable table))
             {
                 _target = table;
-                if (!table._hasBeenCleaned)
+                if (!table.HasBeenCleaned)
                 {
                     table._xclPoint.gameObject.SetActive(true);
                 }
@@ -134,7 +134,7 @@ namespace InputAndMovement
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            InteractionCanvas.Instance.gameObject.SetActive(false);
+            InteractionCanvas.Instance?.gameObject.SetActive(false);
             if (other.gameObject.TryGetComponent(out CharacterTarget character))
             {
                 character._xclPoint.gameObject.SetActive(false);
@@ -176,7 +176,10 @@ namespace InputAndMovement
             if (_target?.GetType() == typeof(CleaningTable))
             {
                 CleaningTable target = (CleaningTable)_target;
-                target.Cleaning();
+                if (!target.HasBeenCleaned)
+                {
+                    target.Cleaning();
+                }
                 _target = null;
             }
 
