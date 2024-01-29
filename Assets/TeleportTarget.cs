@@ -1,9 +1,6 @@
-using System;
 using System.Collections;
 using InputAndMovement;
-using UnityEditor.Animations;
 using UnityEngine;
-using UnityEngine.Timeline;
 using UnityEngine.UI;
 
 public class TeleportTarget : Target
