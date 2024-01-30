@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CleaningTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CleaningTable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/OpenDoorCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OpenDoorCheck.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Build.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Build.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TeleportTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TeleportTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GameObjects/Teleport.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/GameObjects/Teleport.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/UI/DialogueCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/UI/DialogueCanvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scritps/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scritps/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scritps/UI/InteractionCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scritps/UI/InteractionCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scritps/UI/DialogueTextBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scritps/UI/DialogueTextBox.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +29,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Scritps/DialogueSystem/PlayerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scritps/UI/BlackScreenCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scritps/UI/DialogueCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scritps/UI/DialoguePressY.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scritps/UI/ExclamativePoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scritps/UI/InteractionCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/MathUtility.cs" root0="SKIP_HIGHLIGHTING" />
@@ -50,7 +52,7 @@
     "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dialogue-box",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,10 +103,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="28660">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="28660" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -122,6 +124,7 @@
       <updated>1706344548380</updated>
       <workItem from="1706344556076" duration="16492000" />
       <workItem from="1706558554081" duration="5824000" />
+      <workItem from="1706610645112" duration="3314000" />
     </task>
     <servers />
   </component>

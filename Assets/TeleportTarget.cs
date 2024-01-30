@@ -1,6 +1,8 @@
 using System.Collections;
 using InputAndMovement;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class TeleportTarget : Target
@@ -9,6 +11,10 @@ public class TeleportTarget : Target
     [SerializeField] private float _transitionTime;
     [SerializeField] private float _blackScreenTime;
     [SerializeField] private AudioClip _newSoundtrack;
+    [SerializeField] private Sprite _newTextBoxSprite;
+    [SerializeField] private Sprite _newNameBoxSprite;
+    [SerializeField] private Color _newTextColor;
+    [SerializeField] private Color _newPressYColor;
     private PlayerMovement _player;
     private float _timer;
 
@@ -19,7 +25,6 @@ public class TeleportTarget : Target
 
     public void Teleporting()
     {
-        //Debug.Log("Mi Teletrasporto verso mille soli di dolore");
         _player.transform.position = _arrivePoint.transform.position;
     }
 
@@ -42,6 +47,7 @@ public class TeleportTarget : Target
             img.color = new Color(img.color.r, img.color.g, img.color.b, newAlpha);
             yield return null;
         }
+
         _timer = 0;
         Teleporting();
         soundtrack.clip = _newSoundtrack;
@@ -52,6 +58,7 @@ public class TeleportTarget : Target
             _timer += Time.deltaTime;
             yield return null;
         }
+
         _timer = 0;
         while (_timer < _transitionTime)
         {
@@ -64,5 +71,11 @@ public class TeleportTarget : Target
         }
         BlackScreenCanvas.Instance.gameObject.SetActive(false);
         _player.enabled = true;
+        GameObject dialogueCanvas = DialogueCanvas.Instance.gameObject;
+        dialogueCanvas.GetComponentInChildren<DialogueTextBox>().gameObject.GetComponent<Image>().sprite = _newTextBoxSprite;
+        dialogueCanvas.GetComponentInChildren<DialogueTextBox>().gameObject.GetComponentInChildren<TMP_Text>().color = _newTextColor;
+        dialogueCanvas.GetComponentInChildren<DialogueNameBox>().gameObject.GetComponent<Image>().sprite = _newNameBoxSprite;
+        dialogueCanvas.GetComponentInChildren<DialogueNameBox>().gameObject.GetComponentInChildren<TMP_Text>().color = _newTextColor;
+        dialogueCanvas.GetComponentInChildren<DialoguePressY>().SwitchTextColor(_newPressYColor);
     }
 }
