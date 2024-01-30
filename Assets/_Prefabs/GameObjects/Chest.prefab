@@ -50,13 +50,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f682192c74aacb4183c0dd12d947d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sprites:
+  _keySprites:
   - {fileID: 21300000, guid: 33488b3d7a0708f43b09cbc331e8ba43, type: 3}
-  - {fileID: 21300000, guid: d5679d842278a6e45a9b171c4f010708, type: 3}
   - {fileID: 21300000, guid: 5af5d44d49c47954aa7cc32ad652a1f8, type: 3}
+  _emptySprites:
+  - {fileID: 21300000, guid: d5679d842278a6e45a9b171c4f010708, type: 3}
+  - {fileID: 21300000, guid: c1e7f22e346cf22468cd831ebab0a20a, type: 3}
+  - {fileID: 21300000, guid: 6ca580863025a70469def0b2bf2611f9, type: 3}
+  - {fileID: 21300000, guid: f15a28e56fbe03f48959a3ec8b7bf9f2, type: 3}
+  - {fileID: 21300000, guid: 0b02d7484f3764243bb45496b7cc478e, type: 3}
   _mySprite: {fileID: 0}
   _chestSound: {fileID: 0}
   _hasKey: 0
+  _xclPoint: {fileID: 0}
 --- !u!61 &5203992804052800753
 BoxCollider2D:
   m_ObjectHideFlags: 0

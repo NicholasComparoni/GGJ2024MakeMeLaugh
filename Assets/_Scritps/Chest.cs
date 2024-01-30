@@ -5,7 +5,8 @@ using UnityEngine.Serialization;
 
 public class Chest : Target
 {
-    [SerializeField] public List<Sprite> _sprites;
+    [SerializeField] public List<Sprite> _keySprites;
+    [SerializeField] public List<Sprite> _emptySprites;
     [SerializeField] public SpriteRenderer _mySprite;
     [SerializeField] private AudioClip _chestSound;
     [SerializeField] private bool _hasKey;
@@ -25,7 +26,7 @@ public class Chest : Target
     {
         if (_hasKey)
         {
-            _mySprite.sprite = _sprites[0];
+            _mySprite.sprite = _keySprites[0];
 
             PickupTarget target = gameObject.AddComponent<PickupTarget>();
             if (GetComponents<PickupTarget>().Length > 1)
@@ -49,7 +50,7 @@ public class Chest : Target
             {
                 _audioSource.PlayOneShot(_chestSound);
             }
-            _mySprite.sprite = _sprites[1];
+            _mySprite.sprite = _emptySprites[Random.Range(0,_emptySprites.Count)];
             isChestOpen = true;
         }
 

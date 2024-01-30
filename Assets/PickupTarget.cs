@@ -17,7 +17,7 @@ public class PickupTarget : Target
         //gameObject.SetActive(false);
         if (TryGetComponent<Chest>(out Chest chest))
         {
-            chest._mySprite.sprite = chest._sprites[2];
+            chest._mySprite.sprite = chest._keySprites[1];
         }
     }
 }
