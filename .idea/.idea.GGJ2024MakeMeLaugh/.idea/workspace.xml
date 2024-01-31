@@ -7,13 +7,7 @@
     <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Build.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Build.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/GameObjects/Chest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/GameObjects/Chest.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/GameObjects/ChestWithKey.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/GameObjects/ChestWithKey.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Spawners.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Spawners/CharacterSpawner.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Spawners/CharacterSpawner.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Spawners/ChestSpawner.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Spawners/ChestSpawner.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Managers/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,15 +19,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/17f93525611b415793c185babecf33713b800/e3/522e0f52/Character.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scritps/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scritps/Chest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scritps/DialogueSystem/CharacterBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scritps/DialogueSystem/PlayerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scritps/UI/BlackScreenCanvas.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scritps/UI/DialogueCanvas.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scritps/UI/DialoguePressY.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scritps/UI/ExclamativePoint.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scritps/UI/InteractionCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/834b2ded5dad441e8c7a4287897d63c746ac00/67/7febfbdc/WaitHandle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/MathUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.8.9/Runtime/Intrinsics/x86/Avx.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/LayoutElementEditor.cs" root0="SKIP_HIGHLIGHTING" />
@@ -105,10 +91,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="2704">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="2704" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -127,7 +113,7 @@
       <workItem from="1706344556076" duration="16492000" />
       <workItem from="1706558554081" duration="5824000" />
       <workItem from="1706610645112" duration="3314000" />
-      <workItem from="1706698181398" duration="2750000" />
+      <workItem from="1706698181398" duration="14493000" />
     </task>
     <servers />
   </component>
