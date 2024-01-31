@@ -8,6 +8,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Build.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Build.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Chiavica.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Chiavica.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/ChubbyBunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/ChubbyBunny.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Debora.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Debora.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Liquirizia.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Liquirizia.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/MilkoBot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/MilkoBot.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +118,7 @@
       <workItem from="1706344556076" duration="16492000" />
       <workItem from="1706558554081" duration="5824000" />
       <workItem from="1706610645112" duration="3314000" />
-      <workItem from="1706698181398" duration="14493000" />
+      <workItem from="1706698181398" duration="15810000" />
     </task>
     <servers />
   </component>

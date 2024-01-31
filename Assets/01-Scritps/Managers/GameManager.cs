@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
     {
         List<GameObject> spawnerList = GameObject.FindGameObjectsWithTag("Character").ToList();
         List<GameObject> characterList = new();
-        List<int> loadedCharacters = new();
+        List<int> loadedCharactersIndexes = new();
         string[] pathList = Directory.GetFiles("Assets/03-Prefabs/CharProps/LVL1/", "*.prefab", SearchOption.TopDirectoryOnly);
         foreach (string path in pathList)
         {
@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
             {
                 isFree = true;
                 charIndex = Random.Range(0, characterList.Count);
-                foreach (int index in loadedCharacters)
+                foreach (int index in loadedCharactersIndexes)
                 {
                     isFree &= index != charIndex;
                     if (!isFree)
@@ -80,13 +80,13 @@ public class GameManager : MonoBehaviour
                         break;
                     }
                 }
+                //Il ciclo continua finchè non viene selezionato un numero non ancora comparso
             } while (!isFree);
-            loadedCharacters.Add(charIndex);
+            loadedCharactersIndexes.Add(charIndex);
         }
-
-        foreach (int index in loadedCharacters)
+        for (int i = 0; i < spawnerList.Count; i++)
         {
-            Debug.Log(index);
+            GameObject chest = Instantiate(characterList[loadedCharactersIndexes[i]], spawnerList[i].transform, false);
         }
     }
 }
