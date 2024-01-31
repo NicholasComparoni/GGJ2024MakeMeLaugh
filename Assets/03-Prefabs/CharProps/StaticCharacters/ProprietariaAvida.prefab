@@ -52,6 +52,42 @@ PrefabInstance:
       propertyPath: _dialogue.Array.data[3].currentSpeaker
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680800422605412564, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e5b59bbdd66b37d4cbeb65bd22b8265a, type: 3}
+    - target: {fileID: 6747910080025969791, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747910080025969791, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747910080025969791, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747910080025969791, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -92,6 +128,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7413276524649070275, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5bb89ec236b8e284f96188bd6870be6c, type: 3}
     - target: {fileID: 7728384071963477568, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_Name
       value: ProprietariaAvida
