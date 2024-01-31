@@ -401,6 +401,7 @@ MonoBehaviour:
   _speed: 5
   _rb: {fileID: 2041915796077418438}
   _bodySprite: {fileID: 2421320692092559879}
+  _mcAnimationController: {fileID: 0}
 --- !u!50 &2041915796077418438
 Rigidbody2D:
   serializedVersion: 4
