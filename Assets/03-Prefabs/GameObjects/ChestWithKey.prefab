@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: hasKey
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3110415325737341227, guid: 24747876038c40044847992f58d8b574, type: 3}
+      propertyPath: _hasKey
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110415325737341227, guid: 24747876038c40044847992f58d8b574, type: 3}
+      propertyPath: _chestSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e565a4fd6b94ec4b97710eb5efa7b0f, type: 3}
     - target: {fileID: 5963350090217549024, guid: 24747876038c40044847992f58d8b574, type: 3}
       propertyPath: m_Name
       value: ChestWithKey
