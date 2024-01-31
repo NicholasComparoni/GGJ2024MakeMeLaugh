@@ -8,7 +8,7 @@ public class Chest : Target
     [SerializeField] public List<Sprite> _keySprites;
     [SerializeField] public List<Sprite> _emptySprites;
     [SerializeField] public SpriteRenderer _mySprite;
-    [SerializeField] private AudioClip _chestSound;
+    [SerializeField] public AudioClip _chestSound;
     [SerializeField] private bool _hasKey;
     public ExclamativePoint _xclPoint;
     private AudioSource _audioSource;

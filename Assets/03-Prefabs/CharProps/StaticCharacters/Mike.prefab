@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _charName
-      value: Michael
+      value: Mike
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.size
@@ -115,7 +115,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: a08d6af28db7bdb42b83301b3acd1a0d, type: 3}
     - target: {fileID: 7728384071963477568, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_Name
-      value: MIchael
+      value: Mike
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

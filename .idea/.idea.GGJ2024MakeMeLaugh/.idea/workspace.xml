@@ -6,13 +6,36 @@
   <component name="ChangeListManager">
     <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Build.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Build.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/GameObjects/Chest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/GameObjects/Chest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Chiavica.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Chiavica.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/ChubbyBunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/ChubbyBunny.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Debora.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Debora.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Liquirizia.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Liquirizia.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/MilkoBot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/MilkoBot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/Character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Chiavica.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Chiavica.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/ChubbyBunny.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/ChubbyBunny.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Debora.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Debora.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Liquirizia.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/Liquirizia.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/MilkoBot.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL1/MilkoBot.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL2/ArcoBallero.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL2/ArcoBallero.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL2/Character Variant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL2/Character Variant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL2/MIchael.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL2/MIchael.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL2/Proprietaria.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL2/Proprietaria.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL3/Dragon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/CharProps/LVL3/Dragon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/GameObjects/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/GameObjects/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Levels.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06-Sounds/ObjSounds/KeyFound.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06-Sounds/ObjSounds/KeyFound.mp3.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +141,7 @@
       <workItem from="1706344556076" duration="16492000" />
       <workItem from="1706558554081" duration="5824000" />
       <workItem from="1706610645112" duration="3314000" />
-      <workItem from="1706698181398" duration="15810000" />
+      <workItem from="1706698181398" duration="17198000" />
     </task>
     <servers />
   </component>
