@@ -72,11 +72,11 @@ public class GameManager : MonoBehaviour
             {
                 isFree = true;
                 charIndex = Random.Range(0, characterList.Count);
-                for (int j = 0; j < loadedCharacters.Count; j++)
+                foreach (int index in loadedCharacters)
                 {
-                    if (charIndex == loadedCharacters[j])
+                    isFree &= index != charIndex;
+                    if (!isFree)
                     {
-                        isFree = false;
                         break;
                     }
                 }
