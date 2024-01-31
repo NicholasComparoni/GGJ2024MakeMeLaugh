@@ -13,6 +13,11 @@ public class Chest : Target
     public ExclamativePoint _xclPoint;
     private AudioSource _audioSource;
     private bool isChestOpen = false;
+    public bool IsChestOpen
+    {
+        get { return isChestOpen;}
+        private set { }
+    }
     
 
     private int _index = 0;
@@ -40,20 +45,15 @@ public class Chest : Target
             {
                 _audioSource.PlayOneShot(_chestSound);
             }
-
-            isChestOpen=true;
-
         }
         else
         {
             if (!isChestOpen)
             {
                 _audioSource.PlayOneShot(_chestSound);
+                _mySprite.sprite = _emptySprites[Random.Range(0,_emptySprites.Count)];
             }
-            _mySprite.sprite = _emptySprites[Random.Range(0,_emptySprites.Count)];
-            isChestOpen = true;
         }
-
-
+        isChestOpen=true;
     }
 }

@@ -116,10 +116,21 @@ namespace InputAndMovement
             if (other.gameObject.TryGetComponent(out Chest chest))
             {
                 _target = chest;
-                if (!PickupTarget.hasBeenReached)
+                if (chest.TryGetComponent(out PickupTarget pTarget))
                 {
-                    chest._xclPoint.gameObject.SetActive(true);
+                    if (!PickupTarget.hasBeenReached)
+                    {
+                        chest._xclPoint.gameObject.SetActive(true);
+                    }
                 }
+                else
+                {
+                    if (!chest.IsChestOpen)
+                    {
+                        chest._xclPoint.gameObject.SetActive(true);
+                    }
+                }
+                
             }
 
             if (other.gameObject.TryGetComponent(out CleaningTable table))
