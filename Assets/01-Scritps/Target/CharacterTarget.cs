@@ -9,6 +9,10 @@ public class CharacterTarget : Target
     public ExclamativePoint _xclPoint;
     private PlayerMovement _player;
 
+    private void Awake() {
+        type = TargetType.CHARACTER;
+    }
+
     private void Start()
     {
         _player = FindObjectOfType<PlayerMovement>();

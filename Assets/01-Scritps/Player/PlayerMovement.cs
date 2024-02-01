@@ -99,12 +99,21 @@ namespace InputAndMovement
 
             if (other.gameObject.TryGetComponent(out TeleportTarget teleportus))
             {
-                if(PickupTarget.hasBeenReached == true)
+                // TODO: we could check teleport with target to distinguish between levels
+                if (_target.type == TargetType.PICKUP && PickupTarget.hasBeenReached) 
+                // if(PickupTarget.hasBeenReached == true)
                 {
-                _target = teleportus;
-                StartCoroutine(teleportus.BlackScreenTransition());
+                    _target = teleportus;
+                    StartCoroutine(teleportus.BlackScreenTransition());
+                }
+                else if (_target.type == TargetType.TABLE && TableTarget.isMaxCounter) 
+                {
+                    _target = teleportus;
+                    StartCoroutine(teleportus.BlackScreenTransition());
                 }
                 _target = null;
+
+                
             }
 
             if (other.gameObject.TryGetComponent(out CharacterTarget character))
@@ -135,11 +144,14 @@ namespace InputAndMovement
 
             if (other.gameObject.TryGetComponent(out CleaningTable table))
             {
+                // _target = table;
+                // if (!table.HasBeenCleaned)
+                // {
+                //     table._xclPoint.gameObject.SetActive(true);
+                // }
                 _target = table;
-                if (!table.HasBeenCleaned)
-                {
-                    table._xclPoint.gameObject.SetActive(true);
-                }
+                table.Clean();
+                
             }
         }
 

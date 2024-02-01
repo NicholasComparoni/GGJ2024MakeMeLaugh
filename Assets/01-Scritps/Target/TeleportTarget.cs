@@ -18,6 +18,10 @@ public class TeleportTarget : Target
     private PlayerMovement _player;
     private float _timer;
 
+    private void Awake() {
+        type = TargetType.TELEPORT;
+    }
+
     private void Start()
     {
         _player = FindObjectOfType<PlayerMovement>();
