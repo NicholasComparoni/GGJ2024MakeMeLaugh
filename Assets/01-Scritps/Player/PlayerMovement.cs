@@ -100,20 +100,18 @@ namespace InputAndMovement
             if (other.gameObject.TryGetComponent(out TeleportTarget teleportus))
             {
                 // TODO: we could check teleport with target to distinguish between levels
-                if (_target.type == TargetType.PICKUP && PickupTarget.hasBeenReached) 
+                _target = teleportus;
+                if (_target.type == TargetType.TELEPORT && PickupTarget.hasBeenReached) 
                 // if(PickupTarget.hasBeenReached == true)
                 {
-                    _target = teleportus;
                     StartCoroutine(teleportus.BlackScreenTransition());
+                    PickupTarget.hasBeenReached = false;
                 }
-                else if (_target.type == TargetType.TABLE && ((TableTarget)_target).isMaxCounter) // dirty
+                else if (_target.type == TargetType.TELEPORT && TableTarget.isMaxCounter) // dirty
                 {
-                    _target = teleportus;
                     StartCoroutine(teleportus.BlackScreenTransition());
                 }
                 _target = null;
-
-                
             }
 
             if (other.gameObject.TryGetComponent(out CharacterTarget character))
@@ -152,7 +150,7 @@ namespace InputAndMovement
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            InteractionCanvas.Instance.gameObject?.SetActive(false);
+            InteractionCanvas.Instance.gameObject.SetActive(false);
             if (other.gameObject.TryGetComponent(out CharacterTarget character))
             {
                 character._xclPoint.gameObject.SetActive(false);

@@ -11,7 +11,7 @@ public class TableTarget : Target
                                         // this implies _MAXCOUNTER is Game Manager stuff (technically all of the level
                                         // logic shold be in it, not in the player)
 
-    public bool isMaxCounter { get { return _tableCounter == _MAXCOUNTER; } private set { }}
+    public static bool isMaxCounter { get { return _tableCounter == _MAXCOUNTER; } private set { }}
     
 
     public ExclamativePoint _xclPoint;
