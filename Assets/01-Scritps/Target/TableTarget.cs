@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 public class TableTarget : Target
 {
     private static int _tableCounter = 0;
-    private static const int _MAXCOUNTER = 10; // TODO = GetGameObjectsIntoScene.length
+    private const int _MAXCOUNTER = 15; // TODO get the number of tables (TableTarget objects) at run time.
+                                        // Fast solution is Object.FindObjectOfType<T>() but quite inefficient.
+                                        // Best would be to register each TableTarget to a GameManager in its Awake(),
+                                        // this implies _MAXCOUNTER is Game Manager stuff (technically all of the level
+                                        // logic shold be in it, not in the player)
 
-    public int isMaxCounter { get { return _tableCounter == _MAXCOUNTER; } private set { }}
+    public bool isMaxCounter { get { return _tableCounter == _MAXCOUNTER; } private set { }}
     
 
-    [SerializeField] private ExclamativePoint _xclPoint;
+    public ExclamativePoint _xclPoint;
 
     [SerializeField] private SpriteRenderer _renderer; // the first sprite here should be set to dirty
 
@@ -24,16 +27,17 @@ public class TableTarget : Target
 
     private void Awake() {
         type = TargetType.TABLE;
+        // TODO subscribe to game manager to get
     }
 
     public void Clean()
     {
         if (!_hasBeenCleaned) {
-            _xclPoint.gameObject.SetActive = false;
+            _xclPoint.gameObject.SetActive(false);
             _renderer.sprite = _cleanSprite;
             _tableCounter++;
 
-            hasBeenCleaned = true;
+            _hasBeenCleaned = true;
         }
     }
 

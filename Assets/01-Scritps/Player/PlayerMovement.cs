@@ -106,7 +106,7 @@ namespace InputAndMovement
                     _target = teleportus;
                     StartCoroutine(teleportus.BlackScreenTransition());
                 }
-                else if (_target.type == TargetType.TABLE && TableTarget.isMaxCounter) 
+                else if (_target.type == TargetType.TABLE && ((TableTarget)_target).isMaxCounter) // dirty
                 {
                     _target = teleportus;
                     StartCoroutine(teleportus.BlackScreenTransition());
@@ -142,16 +142,11 @@ namespace InputAndMovement
                 
             }
 
-            if (other.gameObject.TryGetComponent(out CleaningTable table))
+            if (other.gameObject.TryGetComponent(out TableTarget table))
             {
-                // _target = table;
-                // if (!table.HasBeenCleaned)
-                // {
-                //     table._xclPoint.gameObject.SetActive(true);
-                // }
-                _target = table;
-                table.Clean();
-                
+                if (!table.HasBeenCleaned) 
+                    table._xclPoint.gameObject.SetActive(true);
+                _target = table;   
             }
         }
 
@@ -166,7 +161,7 @@ namespace InputAndMovement
             {
                 chest._xclPoint.gameObject.SetActive(false);
             }
-            if (other.gameObject.TryGetComponent(out CleaningTable table))
+            if (other.gameObject.TryGetComponent(out TableTarget table))
             {
                 table._xclPoint.gameObject.SetActive(false);
             }
@@ -196,13 +191,10 @@ namespace InputAndMovement
                 target.OpenChest();
                 _target = null; 
             }
-            if (_target?.GetType() == typeof(CleaningTable))
+            if (_target?.GetType() == typeof(TableTarget))
             {
-                CleaningTable target = (CleaningTable)_target;
-                if (!target.HasBeenCleaned)
-                {
-                    target.Cleaning();
-                }
+                TableTarget target = (TableTarget)_target;
+                target.Clean();
                 _target = null;
             }
 

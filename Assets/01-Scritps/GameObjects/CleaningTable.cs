@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// aka TableTarget
+// aka TableTarget TODO: THIS FILE SHOULD NOT BE USED ANYMORE
 public class CleaningTable : Target 
 {
     public ExclamativePoint _xclPoint;
@@ -21,14 +21,14 @@ public class CleaningTable : Target
     private bool isA;
     [SerializeField] private int _cleanedTimes = 0;
 
-    public boolean Cleaning()
+    public bool Cleaning()
     {
         if (!_hasBeenCleaned) {
             _mysprite.sprite = _myspriteClean;
             _hasBeenCleaned = true;
-            return true
+            return true;
         }
-        else return false
+        else return false;
 
         _mysprite.sprite = isA ? _myspriteDirty1 : _myspriteDirty2;
         isA = !isA;

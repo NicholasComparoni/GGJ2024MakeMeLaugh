@@ -107,9 +107,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3918941452863037861}
   - component: {fileID: 8588307148450962030}
-  - component: {fileID: 7250359691449819078}
   - component: {fileID: 2870262773775715127}
   - component: {fileID: 5314648727086788627}
+  - component: {fileID: 5558135451118044242}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -185,24 +185,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7250359691449819078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4419282616610843854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5af832bc86bf1543965df5718fc2911, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _xclPoint: {fileID: 7107804248970101516}
-  _mytriggerus: {fileID: 2870262773775715127}
-  _myController: {fileID: 0}
-  _mysprite: {fileID: 8588307148450962030}
-  _myspriteClean: {fileID: 21300000, guid: f9c223123d29dac48ad2edb958697f5f, type: 3}
-  _cleanedTimes: 0
 --- !u!61 &2870262773775715127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -293,3 +275,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5558135451118044242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4419282616610843854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70e2e945f3e26f442a372555aeb41eed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  _xclPoint: {fileID: 7107804248970101516}
+  _renderer: {fileID: 8588307148450962030}
+  _cleanSprite: {fileID: 21300000, guid: f9c223123d29dac48ad2edb958697f5f, type: 3}
