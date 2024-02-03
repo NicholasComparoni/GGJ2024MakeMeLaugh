@@ -40,14 +40,9 @@ public class GameManager : MonoBehaviour
 
     private void SpawnChests()
     {
-        string[] soundPathList = Directory.GetFiles("Assets/06-Sounds/ObjSounds", "*.mp3", SearchOption.TopDirectoryOnly);
-        List<AudioClip> soundList = new();
+        List<AudioClip> soundList = Resources.LoadAll<AudioClip>("ObjSounds").ToList();
         List<GameObject> spawnerList = GameObject.FindGameObjectsWithTag("Chest").ToList();
         List<GameObject> chestList = new();
-        foreach (string path in soundPathList)
-        {
-            soundList.Add((AudioClip)AssetDatabase.LoadAssetAtPath(path, typeof(AudioClip)));
-        }
         foreach (GameObject obj in spawnerList)
         {
             GameObject chest = Instantiate(_chestPrefab, obj.transform, false);
@@ -63,13 +58,8 @@ public class GameManager : MonoBehaviour
     private void SpawnCharacters()
     {
         List<GameObject> spawnerList = GameObject.FindGameObjectsWithTag("Character").ToList();
-        List<GameObject> characterList = new();
+        List<GameObject> characterList = Resources.LoadAll<GameObject>("CharProps/DynamicCharaters").ToList();
         List<int> loadedCharactersIndexes = new();
-        string[] pathList = Directory.GetFiles("Assets/03-Prefabs/CharProps/DynamicCharaters/", "*.prefab", SearchOption.TopDirectoryOnly);
-        foreach (string path in pathList)
-        {
-            characterList.Add((GameObject)AssetDatabase.LoadAssetAtPath(path, typeof(GameObject)));
-        }
 
         for (int i = 0; i < spawnerList.Count; i++)
         {
