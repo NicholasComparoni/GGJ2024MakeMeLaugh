@@ -13,12 +13,32 @@ PrefabInstance:
       value: ArcoBallero
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _lastDialogueText
+      value: BAILA BAILA, BAILA MORENA!
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[0].dialogueText
-      value: Inserire il testo di ArcoBallero
+      value: "Andr\xE0 tutto beneeee"
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[1].dialogueText
+      value: "Beh, non \xE8 mica detto..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[2].dialogueText
+      value: Sei nella merdaaaa
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[1].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[2].currentSpeaker
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_LocalScale.x

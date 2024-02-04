@@ -42,10 +42,8 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 48832eb27b40db946a855a051fedc94a, type: 3}
     - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
       propertyPath: _lastDialogueText
-      value: 'VATTENE! FAI <b>ALT + F4</b> E NON MOSTRARTI PIU'' IN QUESTA GROTTA!
-
-        (Per
-        un tasto UI serve una donazione di almeno 100 euro al coder :)'
+      value: "VATTENE! FAI <b>ALT + F4</b> E NON MOSTRARTI PIU' IN QUESTA GROTTA!\n[Dona
+        anche tu per realizzare un tasto apposito! A partire da 99.99\u20AC :) ]"
       objectReference: {fileID: 0}
     - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
       propertyPath: _dialogue.Array.size
@@ -74,7 +72,7 @@ PrefabInstance:
     - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
       propertyPath: _dialogue.Array.data[6].soundToPlay
       value: 
-      objectReference: {fileID: 8300000, guid: c528c46077636f140bdccf913b0f12cc, type: 3}
+      objectReference: {fileID: 8300000, guid: 30a6a19196e2e824a87e071fd9b0ef00, type: 3}
     - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
       propertyPath: _dialogue.Array.data[7].soundToPlay
       value: 
@@ -106,7 +104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
       propertyPath: _dialogue.Array.data[3].dialogueText
-      value: 'Prepaaaaaaaarati alla mia IRRRR.....
+      value: 'PREPARATI ALLA MIA IRR-
 
 '
       objectReference: {fileID: 0}
@@ -116,11 +114,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
       propertyPath: _dialogue.Array.data[5].dialogueText
-      value: "ATTACCO SUPERIORE FINALE \nEPICO SCONVOLGENTE\nDI FUOCO INVISIBILE"
+      value: VEDI CHE SUCCEDE A SPUTTANARE I SOLDI SU ONLY FANS!
       objectReference: {fileID: 0}
     - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
       propertyPath: _dialogue.Array.data[6].dialogueText
-      value: "ATTACCO SUPERIORE FINALE \nEPICO SCONVOLGENTE\nDI FUOCO INVISIBILE"
+      value: 'ATTACCO SUPERIORE FINALE                                    EPICO SCONVOLGENTE
+
+
+        DI
+        FUOCO INVISIBILE'
       objectReference: {fileID: 0}
     - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
       propertyPath: _dialogue.Array.data[7].dialogueText
@@ -133,7 +135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
       propertyPath: _dialogue.Array.data[9].dialogueText
-      value: RINGRAZIA CHE NON MI HANNO ANIMATO CHE TI DAVO UNA LABBRATA
+      value: RINGRAZIA CHE NON MI HANNO ANIMATO CHE TI DAVO UNA LABBRATA!
       objectReference: {fileID: 0}
     - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
       propertyPath: _dialogue.Array.data[10].dialogueText
@@ -142,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
       propertyPath: _dialogue.Array.data[3].currentSpeaker
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1364491429540021012, guid: 552f05ce4df32f64a8cf65119d352ccf, type: 3}
       propertyPath: _dialogue.Array.data[4].currentSpeaker

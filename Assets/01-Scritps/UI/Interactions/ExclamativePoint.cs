@@ -15,7 +15,7 @@ public class ExclamativePoint : MonoBehaviour
         {
             chest._xclPoint = this;
         }
-        if (transform.parent.TryGetComponent(out CleaningTable table))
+        if (transform.parent.TryGetComponent(out TableTarget table))
         {
             table._xclPoint = this;
         }

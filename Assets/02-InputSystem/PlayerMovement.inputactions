@@ -31,6 +31,42 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "InventoryDumbButton",
+                    "type": "Button",
+                    "id": "b35c0f54-e93a-470e-b21e-1be64b897df3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MapDumbButton",
+                    "type": "Button",
+                    "id": "d3c1a26f-a680-4582-b978-eee0a7d6a6f4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DashDumbButton",
+                    "type": "Button",
+                    "id": "4dd937a4-39ef-426d-924e-dd820d5be6f6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AttackDumbButton",
+                    "type": "Button",
+                    "id": "6c0ba1fb-0eaa-48e9-9e06-5ec9c82430e4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -64,6 +100,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "DialogueSkip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3cdbd264-a6ac-43d7-8b57-4461329505db",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InventoryDumbButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7ded9637-9da0-4810-9290-e82b24e4c8b2",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MapDumbButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5ffb299a-8fa9-40bf-921a-1354afd042bb",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DashDumbButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3770bcf7-e95b-4294-a17b-f25f34e3e5f4",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AttackDumbButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

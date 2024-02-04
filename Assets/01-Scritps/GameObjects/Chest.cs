@@ -20,7 +20,7 @@ public class Chest : Target
     }
     
 
-    private int _index = 0;
+    // private int _index = 0; // Assigned but never used
 
     public void Start()
     {
