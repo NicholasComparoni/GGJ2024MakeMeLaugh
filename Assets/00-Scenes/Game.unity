@@ -377,6 +377,7 @@ Transform:
   m_Children:
   - {fileID: 341775618}
   - {fileID: 1524757367}
+  - {fileID: 1113783525}
   m_Father: {fileID: 1276366532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &142630079
@@ -1632,7 +1633,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 139877184}
     m_Modifications:
     - target: {fileID: 3994864324383661545, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
       propertyPath: m_Name
@@ -1668,15 +1669,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4346348685342382854, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4346348685342382854, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4346348685342382854, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4346348685342382854, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1699,6 +1700,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
+--- !u!4 &1113783525 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4346348685342382854, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
+  m_PrefabInstance: {fileID: 1113783524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1129681857 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8768624416902435044, guid: 3efd48c6abe3c9c49a8bf73746e87937, type: 3}
@@ -4628,4 +4634,3 @@ SceneRoots:
   - {fileID: 830551271}
   - {fileID: 1276366532}
   - {fileID: 1624400310}
-  - {fileID: 1113783524}

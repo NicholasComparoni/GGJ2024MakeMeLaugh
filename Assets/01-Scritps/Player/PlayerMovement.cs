@@ -270,5 +270,9 @@ namespace InputAndMovement
             isDumbButtonPressed = true;
             ShowDumbDialog(DUMB_BUTTON.ATTACK_BTN);
         }
+        private void OnOptionsButton()
+        {
+
+        }
     }
 }
