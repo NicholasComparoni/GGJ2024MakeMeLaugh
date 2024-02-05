@@ -22,6 +22,7 @@ namespace InputAndMovement
         AudioSource _walkPitch;
 
         private bool isDumbButtonPressed = false;
+        private bool isDialogueOngoing = false;
         private enum DUMB_BUTTON 
         {
             INVENTORY_BTN,
@@ -191,6 +192,7 @@ namespace InputAndMovement
             {
                 CharacterTarget target = (CharacterTarget)_target;
                 target.StartDialogue();
+                isDialogueOngoing = true;
             }
 
             if (_target?.GetType() == typeof(Chest))
@@ -219,7 +221,7 @@ namespace InputAndMovement
                 }
                 else
                 {
-                    CharacterBehaviour._currentCharacterInteraction.Speak(CharacterBehaviour._currentCharacterInteraction
+                    isDialogueOngoing = CharacterBehaviour._currentCharacterInteraction.Speak(CharacterBehaviour._currentCharacterInteraction
                         .GetComponent<CharacterTarget>());
                 }
             }
@@ -255,20 +257,28 @@ namespace InputAndMovement
 
         private void OnInventoryDumbButton()
         {
-            isDumbButtonPressed = true;
-            ShowDumbDialog(DUMB_BUTTON.INVENTORY_BTN);
+            if (!isDialogueOngoing) {
+                isDumbButtonPressed = true;
+                ShowDumbDialog(DUMB_BUTTON.INVENTORY_BTN);
+            }
         }
         private void OnMapDumbButton() {
-            isDumbButtonPressed = true;
-            ShowDumbDialog(DUMB_BUTTON.MAP_BTN);
+            if (!isDialogueOngoing) {
+                isDumbButtonPressed = true;
+                ShowDumbDialog(DUMB_BUTTON.MAP_BTN);
+            }
         }
         private void OnDashDumbButton() {
-            isDumbButtonPressed = true;
-            ShowDumbDialog(DUMB_BUTTON.DASH_BTN);
+            if (!isDialogueOngoing) {
+                isDumbButtonPressed = true;
+                ShowDumbDialog(DUMB_BUTTON.DASH_BTN);
+            }
         }
         private void OnAttackDumbButton() {
-            isDumbButtonPressed = true;
-            ShowDumbDialog(DUMB_BUTTON.ATTACK_BTN);
+            if (!isDialogueOngoing) {
+                isDumbButtonPressed = true;
+                ShowDumbDialog(DUMB_BUTTON.ATTACK_BTN);
+            }
         }
     }
 }
