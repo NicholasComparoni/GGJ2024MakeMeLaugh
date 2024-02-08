@@ -34,7 +34,8 @@ public class CharacterBehaviour : MonoBehaviour
     }
 
     //Functions
-    public void Speak(CharacterTarget target)
+    // Returns true if the dialogue can continue, else false
+    public bool Speak(CharacterTarget target)
     {
         DialogueCanvas.Instance.gameObject.SetActive(true);
         DialogueNameBox nameBox = DialogueCanvas.Instance.GetComponentInChildren<DialogueNameBox>();
@@ -60,11 +61,13 @@ public class CharacterBehaviour : MonoBehaviour
 
                 textBox.GetComponentInChildren<TMP_Text>().text = _dialogue[_dialogueIndex].dialogueText;
                 _dialogueIndex++;
+                return true;
             }
             else
             {
                 target.CloseDialogue();
                 _isFirtInteraction = false;
+                return false;
             }
         }
         else
@@ -75,11 +78,13 @@ public class CharacterBehaviour : MonoBehaviour
                 textBox.GetComponentInChildren<TMP_Text>().text = _lastDialogueText;
                 gameObject.GetComponent<AudioSource>().PlayOneShot(_lastDialogueClip);
                 _dialogueIndex = 0;
+                return true;
             }
             else
             {
                 target.CloseDialogue();
                 _dialogueIndex++;
+                return false;
             }
         }
     }
