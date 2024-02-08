@@ -71,16 +71,6 @@ namespace InputAndMovement
 
         public void OnMove(InputValue value)
         {
-            // if (_timer > .3f)
-            // {
-            //     _walkPitch.pitch = _walkPitch.pitch - .1f + Random.Range(0f, .2f);
-            //     if (_walkPitch.pitch > 1.1f || _walkPitch.pitch < 0.9f)
-            //     {
-            //         _walkPitch.pitch = 1f;
-            //     }
-            //     _walkPitch.PlayOneShot(_stepSound);
-            //     _timer = 0;
-            // }
             moveInputValue = value.Get<Vector2>();
             //Debug.Log(moveInputValue);
         }
@@ -100,6 +90,19 @@ namespace InputAndMovement
         {
             MoveLogicController();
             RotateTransform(moveInputValue);
+            if (moveInputValue != Vector2.zero)
+            {
+                if (_timer > .3f)
+                {
+                    _walkPitch.pitch = _walkPitch.pitch - .1f + Random.Range(0f, .2f);
+                    if (_walkPitch.pitch > 1.1f || _walkPitch.pitch < 0.9f)
+                    {
+                        _walkPitch.pitch = 1f;
+                    }
+                    _walkPitch.PlayOneShot(_stepSound);
+                    _timer = 0;
+                }
+            }
         }
 
         private void OnTriggerEnter2D(Collider2D other)

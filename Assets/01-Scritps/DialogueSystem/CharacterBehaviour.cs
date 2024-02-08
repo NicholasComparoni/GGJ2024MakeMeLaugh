@@ -34,7 +34,7 @@ public class CharacterBehaviour : MonoBehaviour
     }
 
     //Functions
-    // Returns true if the dialogue can continue, else false
+    //Returns true if the dialogue can continue, else false
     public bool Speak(CharacterTarget target)
     {
         DialogueCanvas.Instance.gameObject.SetActive(true);
