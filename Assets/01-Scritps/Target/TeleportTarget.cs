@@ -34,7 +34,7 @@ public class TeleportTarget : Target
 
     public IEnumerator BlackScreenTransition()
     {
-        AudioSource soundtrack = Camera.main.gameObject.GetComponent<AudioSource>();
+        AudioSource soundtrack = AudioManager.MusicInstances[0].GetComponent<AudioSource>();
         BlackScreenCanvas.Instance.gameObject.SetActive(true);
         Image img = BlackScreenCanvas.Instance.gameObject.GetComponentInChildren<Image>();
         _player.StopVelocity();

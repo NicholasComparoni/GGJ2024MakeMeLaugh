@@ -6,17 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Game_EN.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Game_EN.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Managers/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Managers/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Target/TeleportTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Target/TeleportTarget.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/Character.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/AudioManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/Chest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/Chest.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/UI/SoundSettingsMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/UI/SoundSettingsMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +64,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/New folder\GGJ2024Test.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/RanaGade\RanaGade.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Mike\GGJ2024MakeMeLaugh\Build" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -131,7 +124,7 @@
       <workItem from="1707227978403" duration="4975000" />
       <workItem from="1708591595413" duration="7090000" />
       <workItem from="1708618530249" duration="1000" />
-      <workItem from="1708618552983" duration="13533000" />
+      <workItem from="1708618552983" duration="14729000" />
     </task>
     <servers />
   </component>

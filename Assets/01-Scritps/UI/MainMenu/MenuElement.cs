@@ -54,6 +54,7 @@ public class MenuElement : MonoBehaviour, ISelectHandler, IDeselectHandler
         if (SceneManager.GetActiveScene().name != "Menu")
         {
             SceneManager.LoadScene("Menu");
+            AudioManager.UpdateVolume();
         }
         else
         {
