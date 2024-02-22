@@ -216,6 +216,9 @@ namespace InputAndMovement
                 {
                     DialogueCanvas.Instance.gameObject.SetActive(false);
                     isDumbButtonPressed = false;
+                    pInput.actions.FindActionMap("PlayerOnGround").FindAction("DialogueSkip").Disable();
+                    pInput.actions.FindActionMap("PlayerOnGround").FindAction("Move").Enable();
+                    pInput.actions.FindActionMap("DumbButtons").Enable();
                 }
                 else
                 {
@@ -233,6 +236,7 @@ namespace InputAndMovement
             DialogueTextBox textBox = DialogueCanvas.Instance.GetComponentInChildren<DialogueTextBox>();
             
             pInput.actions.FindActionMap("PlayerOnGround").FindAction("DialogueSkip").Enable();
+            pInput.actions.FindActionMap("PlayerOnGround").FindAction("Move").Disable();
             pInput.actions.FindActionMap("DumbButtons").Disable();
             
             nameBox.GetComponentInChildren<TMP_Text>().text = "Cinfa";

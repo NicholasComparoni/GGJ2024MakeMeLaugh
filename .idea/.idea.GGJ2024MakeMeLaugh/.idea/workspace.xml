@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/02-InputSystem/PlayerMovement.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02-InputSystem/PlayerMovement.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Target/CharacterTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Target/CharacterTarget.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +25,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.8.9/Runtime/Intrinsics/x86/Avx.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.8.9/Tests/Editor/BurstInspectorGUITests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.8.9/Tests/Editor/BurstReflectionTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Editor Resources/Shaders/TMP_SDF_SSD.cginc" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/LayoutElementEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIElements/PanelRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/InputField/TouchInputFieldTests.cs" root0="SKIP_HIGHLIGHTING" />
@@ -119,7 +122,7 @@
       <workItem from="1707227978403" duration="4975000" />
       <workItem from="1708591595413" duration="7090000" />
       <workItem from="1708618530249" duration="1000" />
-      <workItem from="1708618552983" duration="3107000" />
+      <workItem from="1708618552983" duration="3724000" />
     </task>
     <servers />
   </component>

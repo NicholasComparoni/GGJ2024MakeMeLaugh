@@ -21,10 +21,10 @@ public class CharacterTarget : Target
     public void StartDialogue()
     {
         _player.StopVelocity();
-        _player.enabled = false;
         CharacterBehaviour._currentCharacterInteraction = gameObject.GetComponent<CharacterBehaviour>();
         CharacterBehaviour._currentCharacterInteraction.Speak(this);
         PlayerMovement.pInput.actions.FindActionMap("PlayerOnGround").FindAction("DialogueSkip").Enable();
+        PlayerMovement.pInput.actions.FindActionMap("PlayerOnGround").FindAction("Move").Disable();
         PlayerMovement.pInput.actions.FindActionMap("DumbButtons").Disable();
     }
 
@@ -39,6 +39,7 @@ public class CharacterTarget : Target
             _isFinalPosition = true;
         }
         PlayerMovement.pInput.actions.FindActionMap("PlayerOnGround").FindAction("DialogueSkip").Disable();
+        PlayerMovement.pInput.actions.FindActionMap("PlayerOnGround").FindAction("Move").Enable();
         PlayerMovement.pInput.actions.FindActionMap("DumbButtons").Enable();
     }
 }
