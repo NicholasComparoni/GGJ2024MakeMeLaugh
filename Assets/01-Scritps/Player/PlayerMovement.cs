@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using Unity.VisualScripting;
 using Random = UnityEngine.Random;
 
 namespace InputAndMovement
@@ -180,7 +181,7 @@ namespace InputAndMovement
             }
             _target = null;
         }
-
+        
         private void OnInteractionButton()
         {
             InteractionCanvas.Instance.gameObject.SetActive(false);
@@ -190,7 +191,6 @@ namespace InputAndMovement
                 PickupTarget target = (PickupTarget)_target;
                 target.PickUp();
             }
-
             if (_target?.GetType() == typeof(CharacterTarget))
             {
                 CharacterTarget target = (CharacterTarget)_target;
