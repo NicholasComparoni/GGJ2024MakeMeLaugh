@@ -1,7 +1,6 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using TMPro;
-using Unity.VisualScripting;
 using Random = UnityEngine.Random;
 
 namespace InputAndMovement
@@ -14,17 +13,21 @@ namespace InputAndMovement
         [SerializeField] public Rigidbody2D _rb;
         [SerializeField] private SpriteRenderer _bodySprite;
         public RuntimeAnimatorController _mcAnimationController;
+
         private PlayerBehaviour _playerBehaviour;
+
         // private float angle = 0; // Assigned but never used
         private Vector2 moveInputValue;
         private Target _target; //A chi chiamare qualcosa
         private float _timer = 0;
         private AudioClip _stepSound;
+        public static PlayerInput pInput;
         AudioSource _walkPitch;
 
         private bool isDumbButtonPressed = false;
         private bool isDialogueOngoing = false;
-        private enum DUMB_BUTTON 
+
+        private enum DUMB_BUTTON
         {
             INVENTORY_BTN,
             MAP_BTN,
@@ -38,23 +41,13 @@ namespace InputAndMovement
             _playerBehaviour = FindObjectOfType<PlayerBehaviour>();
             _stepSound = _playerBehaviour.StepSound;
             _walkPitch = AudioManager.AudioSource;
+            pInput = GetComponent<PlayerInput>();
+            pInput.actions.FindActionMap("PlayerOnGround").FindAction("DialogueSkip").Disable();
         }
 
         public void Awake()
         {
             anim = GetComponent<Animator>();
-        }
-        public void Move(Vector2 direction)
-        {
-            MoveTransform(direction);
-        }
-
-        private void MoveTransform(Vector2 direction)
-        {
-            direction.Normalize();
-            Debug.Log($"{direction.magnitude}");
-            Vector2 deltaMove = direction * _speed * Time.deltaTime;
-            transform.position = (Vector2)transform.position + deltaMove;
         }
 
         private void Update()
@@ -66,8 +59,6 @@ namespace InputAndMovement
         {
             anim.SetFloat("GoVertical", moveInputValue.y);
             anim.SetFloat("GoHorizontal", moveInputValue.x);
-
-
         }
 
         public void OnMove(InputValue value)
@@ -100,6 +91,7 @@ namespace InputAndMovement
                     {
                         _walkPitch.pitch = 1f;
                     }
+
                     _walkPitch.PlayOneShot(_stepSound);
                     _timer = 0;
                 }
@@ -117,8 +109,8 @@ namespace InputAndMovement
             {
                 // TODO: we could check teleport with target to distinguish between levels
                 _target = teleportus;
-                if (_target.type == TargetType.TELEPORT && PickupTarget.hasBeenReached) 
-                // if(PickupTarget.hasBeenReached == true)
+                if (_target.type == TargetType.TELEPORT && PickupTarget.hasBeenReached)
+                    // if(PickupTarget.hasBeenReached == true)
                 {
                     StartCoroutine(teleportus.BlackScreenTransition());
                     PickupTarget.hasBeenReached = false;
@@ -127,6 +119,7 @@ namespace InputAndMovement
                 {
                     StartCoroutine(teleportus.BlackScreenTransition());
                 }
+
                 _target = null;
             }
 
@@ -153,14 +146,13 @@ namespace InputAndMovement
                         chest._xclPoint.gameObject.SetActive(true);
                     }
                 }
-                
             }
 
             if (other.gameObject.TryGetComponent(out TableTarget table))
             {
-                if (!table.HasBeenCleaned) 
+                if (!table.HasBeenCleaned)
                     table._xclPoint.gameObject.SetActive(true);
-                _target = table;   
+                _target = table;
             }
         }
 
@@ -171,17 +163,20 @@ namespace InputAndMovement
             {
                 character._xclPoint.gameObject.SetActive(false);
             }
+
             if (other.gameObject.TryGetComponent(out Chest chest))
             {
                 chest._xclPoint.gameObject.SetActive(false);
             }
+
             if (other.gameObject.TryGetComponent(out TableTarget table))
             {
                 table._xclPoint.gameObject.SetActive(false);
             }
+
             _target = null;
         }
-        
+
         private void OnInteractionButton()
         {
             InteractionCanvas.Instance.gameObject.SetActive(false);
@@ -191,6 +186,7 @@ namespace InputAndMovement
                 PickupTarget target = (PickupTarget)_target;
                 target.PickUp();
             }
+
             if (_target?.GetType() == typeof(CharacterTarget))
             {
                 CharacterTarget target = (CharacterTarget)_target;
@@ -203,14 +199,13 @@ namespace InputAndMovement
                 Chest target = (Chest)_target;
                 target.OpenChest();
             }
-            
+
             if (_target?.GetType() == typeof(TableTarget))
             {
                 TableTarget target = (TableTarget)_target;
                 target.Clean();
             }
-
-                _target = null;
+            _target = null;
         }
 
         private void OnDialogueSkip()
@@ -224,7 +219,8 @@ namespace InputAndMovement
                 }
                 else
                 {
-                    isDialogueOngoing = CharacterBehaviour._currentCharacterInteraction.Speak(CharacterBehaviour._currentCharacterInteraction
+                    isDialogueOngoing = CharacterBehaviour._currentCharacterInteraction.Speak(CharacterBehaviour
+                        ._currentCharacterInteraction
                         .GetComponent<CharacterTarget>());
                 }
             }
@@ -236,56 +232,69 @@ namespace InputAndMovement
             DialogueNameBox nameBox = DialogueCanvas.Instance.GetComponentInChildren<DialogueNameBox>();
             DialogueTextBox textBox = DialogueCanvas.Instance.GetComponentInChildren<DialogueTextBox>();
             
+            pInput.actions.FindActionMap("PlayerOnGround").FindAction("DialogueSkip").Enable();
+            pInput.actions.FindActionMap("DumbButtons").Disable();
+            
             nameBox.GetComponentInChildren<TMP_Text>().text = "Cinfa";
             switch (whichBtn)
             {
                 case DUMB_BUTTON.INVENTORY_BTN:
-                    textBox.GetComponentInChildren<TMP_Text>().text = 
-                    "Passa alla versione Premium a 59.99€ per sbloccare l'inventario!";
+                    textBox.GetComponentInChildren<TMP_Text>().text =
+                        "Passa alla versione Premium a 59.99€ per sbloccare l'inventario!";
                     break;
                 case DUMB_BUTTON.MAP_BTN:
-                    textBox.GetComponentInChildren<TMP_Text>().text = 
-                    "Qui non prende, e Google Maps non funziona...";
+                    textBox.GetComponentInChildren<TMP_Text>().text =
+                        "Qui non prende, e Google Maps non funziona...";
                     break;
                 case DUMB_BUTTON.DASH_BTN:
-                    textBox.GetComponentInChildren<TMP_Text>().text = 
-                    "Ma lo vedi che panza? E vuoi pure scattare??";
+                    textBox.GetComponentInChildren<TMP_Text>().text =
+                        "Ma lo vedi che panza? E vuoi pure scattare??";
                     break;
                 case DUMB_BUTTON.ATTACK_BTN:
-                    textBox.GetComponentInChildren<TMP_Text>().text = 
-                    "'Sta spada da cosplayer ti è costata una fortuna. NON usarla.";
+                    textBox.GetComponentInChildren<TMP_Text>().text =
+                        "'Sta spada da cosplayer ti è costata una fortuna. NON usarla.";
                     break;
             }
         }
 
         private void OnInventoryDumbButton()
         {
-            if (!isDialogueOngoing) {
+            if (!isDialogueOngoing)
+            {
                 isDumbButtonPressed = true;
                 ShowDumbDialog(DUMB_BUTTON.INVENTORY_BTN);
             }
         }
-        private void OnMapDumbButton() {
-            if (!isDialogueOngoing) {
+
+        private void OnMapDumbButton()
+        {
+            if (!isDialogueOngoing)
+            {
                 isDumbButtonPressed = true;
                 ShowDumbDialog(DUMB_BUTTON.MAP_BTN);
             }
         }
-        private void OnDashDumbButton() {
-            if (!isDialogueOngoing) {
+
+        private void OnDashDumbButton()
+        {
+            if (!isDialogueOngoing)
+            {
                 isDumbButtonPressed = true;
                 ShowDumbDialog(DUMB_BUTTON.DASH_BTN);
             }
         }
-        private void OnAttackDumbButton() {
-            if (!isDialogueOngoing) {
+
+        private void OnAttackDumbButton()
+        {
+            if (!isDialogueOngoing)
+            {
                 isDumbButtonPressed = true;
                 ShowDumbDialog(DUMB_BUTTON.ATTACK_BTN);
             }
         }
+
         private void OnOptionsButton()
         {
-
         }
     }
 }

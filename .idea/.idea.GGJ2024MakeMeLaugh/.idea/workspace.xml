@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/OptionsMenuCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/OptionsMenuCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Player/PlayerInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Player/PlayerInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Target/CharacterTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Target/CharacterTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02-InputSystem/PlayerMovement.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02-InputSystem/PlayerMovement.inputactions" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +24,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/17f93525611b415793c185babecf33713b800/e3/522e0f52/Character.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/834b2ded5dad441e8c7a4287897d63c746ac00/67/7febfbdc/WaitHandle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/OptionsMenuCanvas.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/MathUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/MathUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.8.9/Runtime/Intrinsics/x86/Avx.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.8.9/Tests/Editor/BurstInspectorGUITests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.8.9/Tests/Editor/BurstReflectionTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/LayoutElementEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIElements/PanelRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/InputField/TouchInputFieldTests.cs" root0="SKIP_HIGHLIGHTING" />
@@ -118,7 +122,9 @@
       <workItem from="1706698181398" duration="19256000" />
       <workItem from="1707167439812" duration="1444000" />
       <workItem from="1707227978403" duration="4975000" />
-      <workItem from="1708591595413" duration="2262000" />
+      <workItem from="1708591595413" duration="7090000" />
+      <workItem from="1708618530249" duration="1000" />
+      <workItem from="1708618552983" duration="1962000" />
     </task>
     <servers />
   </component>

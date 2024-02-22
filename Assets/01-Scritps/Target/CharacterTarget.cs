@@ -1,7 +1,5 @@
-using System;
 using InputAndMovement;
 using UnityEngine;
-using UnityEngine.Windows.WebCam;
 
 [RequireComponent(typeof(CharacterBehaviour))]
 public class CharacterTarget : Target
@@ -26,6 +24,8 @@ public class CharacterTarget : Target
         _player.enabled = false;
         CharacterBehaviour._currentCharacterInteraction = gameObject.GetComponent<CharacterBehaviour>();
         CharacterBehaviour._currentCharacterInteraction.Speak(this);
+        PlayerMovement.pInput.actions.FindActionMap("PlayerOnGround").FindAction("DialogueSkip").Enable();
+        PlayerMovement.pInput.actions.FindActionMap("DumbButtons").Disable();
     }
 
     public virtual void CloseDialogue()
@@ -38,5 +38,7 @@ public class CharacterTarget : Target
             transform.position = finalPosition.position;
             _isFinalPosition = true;
         }
+        PlayerMovement.pInput.actions.FindActionMap("PlayerOnGround").FindAction("DialogueSkip").Disable();
+        PlayerMovement.pInput.actions.FindActionMap("DumbButtons").Enable();
     }
 }
