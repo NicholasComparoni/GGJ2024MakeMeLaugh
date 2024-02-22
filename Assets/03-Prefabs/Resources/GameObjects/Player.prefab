@@ -283,7 +283,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8768624416902435044}
   - component: {fileID: 1616069167890357811}
-  - component: {fileID: 8579893541083651006}
   - component: {fileID: 5523334096867443233}
   - component: {fileID: 6698134590097340641}
   - component: {fileID: 2041915796077418438}
@@ -328,19 +327,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _stepSound: {fileID: 8300000, guid: c528c46077636f140bdccf913b0f12cc, type: 3}
   _playerName: Polso
---- !u!114 &8579893541083651006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8502238019431442348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c801d508705dc84e9fcd94ba6bfcb0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _target: {fileID: 6698134590097340641}
 --- !u!61 &5523334096867443233
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -376,10 +362,10 @@ BoxCollider2D:
   m_Offset: {x: 0.013593569, y: 0.03398408}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 21.6, y: 16.2}
+    newSize: {x: 21.6, y: 16.2}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
