@@ -80,6 +80,6 @@ public class TeleportTarget : Target
         dialogueCanvas.GetComponentInChildren<DialogueTextBox>().gameObject.GetComponentInChildren<TMP_Text>().color = _newTextColor;
         dialogueCanvas.GetComponentInChildren<DialogueNameBox>().gameObject.GetComponent<Image>().sprite = _newNameBoxSprite;
         dialogueCanvas.GetComponentInChildren<DialogueNameBox>().gameObject.GetComponentInChildren<TMP_Text>().color = _newTextColor;
-        dialogueCanvas.GetComponentInChildren<DialoguePressY>().SwitchTextColor(_newPressYColor);
+        dialogueCanvas.GetComponentInChildren<DialoguePressA>().SwitchTextColor(_newPressYColor);
     }
 }

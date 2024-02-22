@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class DialoguePressY : MonoBehaviour
+public class DialoguePressA : MonoBehaviour
 {
     public void SwitchTextColor(Color color)
     {
