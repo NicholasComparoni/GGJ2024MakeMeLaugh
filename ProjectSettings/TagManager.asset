@@ -7,6 +7,8 @@ TagManager:
   - Chest
   - Character
   - OptionsMenu
+  - Music
+  - Ambient
   layers:
   - Default
   - TransparentFX

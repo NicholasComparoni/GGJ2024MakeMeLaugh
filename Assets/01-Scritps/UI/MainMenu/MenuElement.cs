@@ -65,7 +65,7 @@ public class MenuElement : MonoBehaviour, ISelectHandler, IDeselectHandler
     public void ToOptionsMenu()
     {
         OptionsMenuCanvas.Instance.gameObject.SetActive(true);
-        OptionsMenuCanvas.Instance.gameObject.GetComponentsInChildren<Button>()[0].Select();
+        GameObject.FindWithTag("OptionsMenu").GetComponentsInChildren<Button>()[0].Select();
         MainMenuCanvas.Instance.gameObject.SetActive(false);
     }
     

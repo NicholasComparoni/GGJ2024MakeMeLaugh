@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -29,7 +30,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Play();
+        if(SceneManager.GetActiveScene().name != "Menu")
+            Play();
     }
 
     public void Play()

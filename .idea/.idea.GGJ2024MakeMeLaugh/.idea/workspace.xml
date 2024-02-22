@@ -6,17 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Game.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Game.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Game_EN.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Game_EN.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Managers/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Managers/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Managers/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02-InputSystem/PlayerMovement.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02-InputSystem/PlayerMovement.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/Character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/AudioManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/Chest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/Chest.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04-Art/GameObjects/Polso/Front MC/Polso_mc_1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04-Art/GameObjects/Polso/Front MC/Polso_mc_1.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04-Art/GameObjects/Polso/Front MC/polso_mc_2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04-Art/GameObjects/Polso/Front MC/polso_mc_2.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04-Art/GameObjects/Polso/Front MC/polsso_mc_4.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04-Art/GameObjects/Polso/Front MC/polsso_mc_4.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/UI/SoundSettingsMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/UI/SoundSettingsMenu.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,10 +104,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="28648">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="28648" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -132,7 +131,7 @@
       <workItem from="1707227978403" duration="4975000" />
       <workItem from="1708591595413" duration="7090000" />
       <workItem from="1708618530249" duration="1000" />
-      <workItem from="1708618552983" duration="6830000" />
+      <workItem from="1708618552983" duration="13533000" />
     </task>
     <servers />
   </component>
