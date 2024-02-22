@@ -1,9 +1,10 @@
-using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class OptionsMenuCanvas : MonoBehaviour
 {
     public static OptionsMenuCanvas Instance;
+    [SerializeField] private List<GameObject> elementsToTurnOffOnStart;
 
     private void Awake()
     {
@@ -19,6 +20,10 @@ public class OptionsMenuCanvas : MonoBehaviour
 
     private void Start()
     {
+        foreach (GameObject obj in elementsToTurnOffOnStart)
+        {
+            obj.SetActive(false);
+        }
         gameObject.SetActive(false);
     }
 }
