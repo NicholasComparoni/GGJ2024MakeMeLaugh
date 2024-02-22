@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Chest
   - Character
+  - OptionsMenu
   layers:
   - Default
   - TransparentFX

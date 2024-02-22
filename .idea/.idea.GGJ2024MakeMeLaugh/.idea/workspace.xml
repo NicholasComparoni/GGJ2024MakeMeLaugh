@@ -6,8 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Game.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Game.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Player/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Target/CharacterTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Target/CharacterTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02-InputSystem/PlayerMovement.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02-InputSystem/PlayerMovement.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04-Art/GameObjects/Polso/Front MC/Polso_mc_1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04-Art/GameObjects/Polso/Front MC/Polso_mc_1.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04-Art/GameObjects/Polso/Front MC/polso_mc_2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04-Art/GameObjects/Polso/Front MC/polso_mc_2.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04-Art/GameObjects/Polso/Front MC/polsso_mc_4.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04-Art/GameObjects/Polso/Front MC/polsso_mc_4.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +132,7 @@
       <workItem from="1707227978403" duration="4975000" />
       <workItem from="1708591595413" duration="7090000" />
       <workItem from="1708618530249" duration="1000" />
-      <workItem from="1708618552983" duration="3724000" />
+      <workItem from="1708618552983" duration="6830000" />
     </task>
     <servers />
   </component>

@@ -33,7 +33,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "OptionsButton",
+                    "name": "PauseMenu",
                     "type": "Button",
                     "id": "0b78f2fe-5390-46c9-b38b-8f5194f6ceda",
                     "expectedControlType": "Button",
@@ -160,7 +160,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "OptionsButton",
+                    "action": "PauseMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9d05b4b4-23b3-4ac9-b9e9-d9a93fa8770b",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PauseMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

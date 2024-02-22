@@ -1,6 +1,8 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 namespace InputAndMovement
@@ -12,6 +14,7 @@ namespace InputAndMovement
         [SerializeField] public float _speed = 1;
         [SerializeField] public Rigidbody2D _rb;
         [SerializeField] private SpriteRenderer _bodySprite;
+        [SerializeField] private OptionsMenuCanvas _optionsMenuCanvas;
         public RuntimeAnimatorController _mcAnimationController;
 
         private PlayerBehaviour _playerBehaviour;
@@ -39,10 +42,12 @@ namespace InputAndMovement
         private void Start()
         {
             _playerBehaviour = FindObjectOfType<PlayerBehaviour>();
+            _optionsMenuCanvas.gameObject.SetActive(false);
             _stepSound = _playerBehaviour.StepSound;
             _walkPitch = AudioManager.AudioSource;
             pInput = GetComponent<PlayerInput>();
             pInput.actions.FindActionMap("PlayerOnGround").FindAction("DialogueSkip").Disable();
+            pInput.actions.FindActionMap("DumbButtons").Enable();
         }
 
         public void Awake()
@@ -297,8 +302,22 @@ namespace InputAndMovement
             }
         }
 
-        private void OnOptionsButton()
+        private void OnPauseMenu()
         {
+            if (SceneManager.GetActiveScene().name != "Menu")
+            {
+                pInput.actions.FindActionMap("PlayerOnGround").Disable();
+                pInput.actions.FindActionMap("DumbButtons").Disable();
+                _optionsMenuCanvas.gameObject.SetActive(true);
+                GameObject.FindWithTag("OptionsMenu")?.GetComponentsInChildren<Button>()[0].Select();
+            }
+        }
+
+        public void Resume()
+        {
+            pInput.actions.FindActionMap("PlayerOnGround").Enable();
+            pInput.actions.FindActionMap("DumbButtons").Enable();
+            _optionsMenuCanvas.gameObject.SetActive(false);
         }
     }
 }

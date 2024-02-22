@@ -34,7 +34,7 @@ public class MenuElement : MonoBehaviour, ISelectHandler, IDeselectHandler
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Game_EN");
     }
 
     public void Exit()
@@ -51,9 +51,16 @@ public class MenuElement : MonoBehaviour, ISelectHandler, IDeselectHandler
 
     public void ToMainMenu()
     {
-        MainMenuCanvas.Instance.gameObject.SetActive(true);
-        MainMenuCanvas.Instance.gameObject.GetComponentsInChildren<Button>()[0].Select();
-        OptionsMenuCanvas.Instance.gameObject.SetActive(false);
+        if (SceneManager.GetActiveScene().name != "Menu")
+        {
+            SceneManager.LoadScene("Menu");
+        }
+        else
+        {
+            MainMenuCanvas.Instance.gameObject.SetActive(true);
+            MainMenuCanvas.Instance.gameObject.GetComponentsInChildren<Button>()[0].Select();
+            OptionsMenuCanvas.Instance.gameObject.SetActive(false);
+        }
     }
     public void ToOptionsMenu()
     {
@@ -61,4 +68,5 @@ public class MenuElement : MonoBehaviour, ISelectHandler, IDeselectHandler
         OptionsMenuCanvas.Instance.gameObject.GetComponentsInChildren<Button>()[0].Select();
         MainMenuCanvas.Instance.gameObject.SetActive(false);
     }
+    
 }
