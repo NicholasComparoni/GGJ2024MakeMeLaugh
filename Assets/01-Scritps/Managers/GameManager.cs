@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         AudioManager.UpdateVolume();
+        currentLevel = 1;
         if(SceneManager.GetActiveScene().name != "Menu")
             Play();
     }
