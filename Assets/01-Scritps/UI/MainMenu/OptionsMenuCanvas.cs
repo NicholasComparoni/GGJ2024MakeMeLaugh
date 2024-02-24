@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,12 +19,13 @@ public class OptionsMenuCanvas : MonoBehaviour
         }
     }
 
-    private void Start()
+    private IEnumerator Start()
     {
         foreach (GameObject obj in elementsToTurnOffOnStart)
         {
             obj.SetActive(false);
         }
         gameObject.SetActive(false);
+        yield return null;
     }
 }

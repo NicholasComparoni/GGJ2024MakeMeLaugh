@@ -22,6 +22,11 @@ public class MenuElement : MonoBehaviour, ISelectHandler, IDeselectHandler
 
     public void OnSelect(BaseEventData eventData)
     {
+        if (_buttonText == null)
+        {
+            //Debug.Log(gameObject.name);
+            _buttonText = GetComponentInChildren<TMP_Text>();
+        }
         _buttonText.color = Color.white;
         _buttonText.fontStyle = FontStyles.Bold;
     }

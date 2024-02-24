@@ -6,17 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Game_EN.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Game_EN.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Managers/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Managers/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Player/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/AmbientSlider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/AmbientSlider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MusicSlider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MusicSlider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/AudioManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/UI/OptionsMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/UI/OptionsMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/UI/SoundSettingsMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/UI/SoundSettingsMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/OptionsMenuCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/OptionsMenuCanvas.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +132,7 @@
       <workItem from="1708618530249" duration="1000" />
       <workItem from="1708618552983" duration="14729000" />
       <workItem from="1708705653510" duration="3184000" />
-      <workItem from="1708764523283" duration="3038000" />
+      <workItem from="1708764523283" duration="4239000" />
     </task>
     <servers />
   </component>

@@ -1418,12 +1418,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4492443322776572136, guid: 97ef5c1f5894b864c8df1f9ae13c653e, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492443322776572136, guid: 97ef5c1f5894b864c8df1f9ae13c653e, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 2156492cfff87be4eb55a50f9906fa2b, type: 3}
     - target: {fileID: 5039346574179162554, guid: 97ef5c1f5894b864c8df1f9ae13c653e, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5039346574179162554, guid: 97ef5c1f5894b864c8df1f9ae13c653e, type: 3}
+      propertyPath: m_TagString
+      value: Music
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
