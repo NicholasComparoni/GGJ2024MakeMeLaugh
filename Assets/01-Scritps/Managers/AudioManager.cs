@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
     public static List<GameObject> MusicInstances;
     public static List<GameObject> AmbientInstances;
     public static List<GameObject> StepsInstances;
+    public static Language Language;
     private void Awake()
     {
         if (Instance != null)
@@ -27,6 +28,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         AudioSource = gameObject.GetComponent<AudioSource>();
+        Language = Language.ENG;
     }
 
     public static void LoadAudioSources()

@@ -1,4 +1,5 @@
 using TMPro;
+using UnityEditor.Experimental.Rendering;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -38,7 +39,19 @@ public class MenuElement : MonoBehaviour, ISelectHandler, IDeselectHandler
     public void PlayGame()
     {
         GameManager.Instance.GetComponent<AudioSource>().Stop();
-        SceneManager.LoadScene("Game_EN");
+        switch (AudioManager.Language)
+        {
+            case Language.ENG :
+            {
+                SceneManager.LoadScene("Game_ENG");
+                break;
+            }
+            case Language.ITA :
+            {
+                SceneManager.LoadScene("Game_ITA");
+                break;
+            }
+        }
     }
 
     public void Exit()
@@ -74,6 +87,12 @@ public class MenuElement : MonoBehaviour, ISelectHandler, IDeselectHandler
         OptionsMenuCanvas.Instance.gameObject.SetActive(true);
         GameObject.FindWithTag("OptionsMenu").GetComponentsInChildren<Button>()[0].Select();
         MainMenuCanvas.Instance.gameObject.SetActive(false);
+    }
+
+    public void ChangeLanguage(int language)
+    {
+        AudioManager.Language = (Language)language;
+        FindObjectOfType<LanguageBox>().GetComponent<TMP_Text>().text = AudioManager.Language.ToString();
     }
     
 }
