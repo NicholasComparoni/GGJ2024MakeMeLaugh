@@ -214,6 +214,7 @@ namespace InputAndMovement
                 TableTarget target = (TableTarget)_target;
                 target.Clean();
             }
+
             _target = null;
         }
 
@@ -243,29 +244,55 @@ namespace InputAndMovement
             DialogueCanvas.Instance.gameObject.SetActive(true);
             DialogueNameBox nameBox = DialogueCanvas.Instance.GetComponentInChildren<DialogueNameBox>();
             DialogueTextBox textBox = DialogueCanvas.Instance.GetComponentInChildren<DialogueTextBox>();
-            
+
             pInput.actions.FindActionMap("PlayerOnGround").FindAction("DialogueSkip").Enable();
             pInput.actions.FindActionMap("PlayerOnGround").FindAction("Move").Disable();
             pInput.actions.FindActionMap("DumbButtons").Disable();
-            
+
             nameBox.GetComponentInChildren<TMP_Text>().text = "Cinfa";
-            switch (whichBtn)
+            switch (GameManager.Instance.currentLevel)
             {
-                case DUMB_BUTTON.INVENTORY_BTN:
-                    textBox.GetComponentInChildren<TMP_Text>().text =
-                        "Passa alla versione Premium a 59.99€ per sbloccare l'inventario!";
+                case 1:
+                    switch (whichBtn)
+                    {
+                        case DUMB_BUTTON.INVENTORY_BTN:
+                            textBox.GetComponentInChildren<TMP_Text>().text =
+                                "Passa alla versione Premium a 59.99€ per sbloccare l'inventario!";
+                            break;
+                        case DUMB_BUTTON.MAP_BTN:
+                            textBox.GetComponentInChildren<TMP_Text>().text =
+                                "Qui non prende, e Google Maps non funziona...";
+                            break;
+                        case DUMB_BUTTON.DASH_BTN:
+                            textBox.GetComponentInChildren<TMP_Text>().text =
+                                "Ma lo vedi che panza? E vuoi pure scattare??";
+                            break;
+                        case DUMB_BUTTON.ATTACK_BTN:
+                            textBox.GetComponentInChildren<TMP_Text>().text =
+                                "'Sta spada da cosplayer ti è costata una fortuna. NON usarla.";
+                            break;
+                    }
                     break;
-                case DUMB_BUTTON.MAP_BTN:
-                    textBox.GetComponentInChildren<TMP_Text>().text =
-                        "Qui non prende, e Google Maps non funziona...";
-                    break;
-                case DUMB_BUTTON.DASH_BTN:
-                    textBox.GetComponentInChildren<TMP_Text>().text =
-                        "Ma lo vedi che panza? E vuoi pure scattare??";
-                    break;
-                case DUMB_BUTTON.ATTACK_BTN:
-                    textBox.GetComponentInChildren<TMP_Text>().text =
-                        "'Sta spada da cosplayer ti è costata una fortuna. NON usarla.";
+                default:
+                    switch (whichBtn)
+                    {
+                        case DUMB_BUTTON.INVENTORY_BTN:
+                            textBox.GetComponentInChildren<TMP_Text>().text =
+                                "Non ti è concesso aprire l'inventario MENTRE LAVORI!!";
+                            break;
+                        case DUMB_BUTTON.MAP_BTN:
+                            textBox.GetComponentInChildren<TMP_Text>().text =
+                                "Il tuo senso dell'orientamento è così pessimo che ti perdi pure in un fast-food? Seriously?";
+                            break;
+                        case DUMB_BUTTON.DASH_BTN:
+                            textBox.GetComponentInChildren<TMP_Text>().text =
+                                "Se corri con quel tanga potrebbe vedersi tutto, non provarci!";
+                            break;
+                        case DUMB_BUTTON.ATTACK_BTN:
+                            textBox.GetComponentInChildren<TMP_Text>().text =
+                                "Come penso di attaccare? Lanciando hamburger?";
+                            break;
+                    }
                     break;
             }
         }

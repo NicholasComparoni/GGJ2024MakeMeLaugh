@@ -29,6 +29,7 @@ public class TeleportTarget : Target
 
     public void Teleporting()
     {
+        GameManager.Instance.currentLevel++;
         _player.transform.position = _arrivePoint.transform.position;
     }
 

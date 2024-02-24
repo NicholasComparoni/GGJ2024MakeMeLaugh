@@ -1,9 +1,7 @@
 using TMPro;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class MenuElement : MonoBehaviour, ISelectHandler, IDeselectHandler
