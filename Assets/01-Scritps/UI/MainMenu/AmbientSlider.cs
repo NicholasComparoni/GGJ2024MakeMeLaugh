@@ -15,7 +15,7 @@ public class AmbientSlider : MonoBehaviour
     public void ChangeVolume()
     {
         AudioManager.AmbientVolume = _slider.value;
-        Debug.Log("Ambient Volume: " + _slider.value);
+        //Debug.Log("Ambient Volume: " + _slider.value);
         AudioManager.UpdateVolume();
     }
 }

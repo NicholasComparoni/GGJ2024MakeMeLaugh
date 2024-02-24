@@ -25,7 +25,7 @@ namespace InputAndMovement
         private float _timer = 0;
         private AudioClip _stepSound;
         public static PlayerInput pInput;
-        AudioSource _walkPitch;
+        public static AudioSource _walkPitch;
 
         private bool isDumbButtonPressed = false;
         private bool isDialogueOngoing = false;

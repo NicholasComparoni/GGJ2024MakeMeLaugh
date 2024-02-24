@@ -7,11 +7,16 @@
     <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Game_EN.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Game_EN.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/GameObjects/CleaningTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/GameObjects/CleaningTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Managers/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Managers/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Player/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Target/PickupTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Target/PickupTarget.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Target/TableTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Target/TableTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/AmbientSlider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/AmbientSlider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MusicSlider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MusicSlider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/GameObjects/AudioManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/UI/OptionsMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/UI/OptionsMenu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/UI/SoundSettingsMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/UI/SoundSettingsMenu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,16 +30,21 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/17f93525611b415793c185babecf33713b800/e3/522e0f52/Character.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/834b2ded5dad441e8c7a4287897d63c746ac00/67/7febfbdc/WaitHandle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/OptionsMenuCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/StepsSlider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/MathUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.8.9/Runtime/Intrinsics/x86/Avx.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.8.9/Tests/Editor/BurstInspectorGUITests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.8.9/Tests/Editor/BurstReflectionTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.8.9/Tests/Runtime/Shared/035-Functions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.8.9/Tests/Runtime/Shared/090-Vectors-LoadStore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Editor Resources/Shaders/TMP_SDF_SSD.cginc" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/GraphicEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/LayoutElementEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIElements/PanelRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/CanvasSizeCorrectInAwakeAndStart.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/NoActiveCameraInSceneDoesNotCrashEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/InputField/TouchInputFieldTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/NestedLayout/SceneWithNestedLayoutElementsLoads.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -130,7 +140,7 @@
       <workItem from="1708618530249" duration="1000" />
       <workItem from="1708618552983" duration="14729000" />
       <workItem from="1708705653510" duration="3184000" />
-      <workItem from="1708764523283" duration="1284000" />
+      <workItem from="1708764523283" duration="3038000" />
     </task>
     <servers />
   </component>

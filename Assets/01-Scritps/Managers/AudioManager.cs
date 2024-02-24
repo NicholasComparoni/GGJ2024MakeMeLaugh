@@ -8,9 +8,11 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance;
     public static AudioSource AudioSource;
     public static float MusicVolume = 0.3f;
-    public static float AmbientVolume = 0.5f;
-    public static List<GameObject> AmbientInstances;
+    public static float AmbientVolume = 0.6f;
+    public static float StepsVolume = 0.4f;
     public static List<GameObject> MusicInstances;
+    public static List<GameObject> AmbientInstances;
+    public static List<GameObject> StepsInstances;
     private void Awake()
     {
         if (Instance != null)
@@ -29,9 +31,9 @@ public class AudioManager : MonoBehaviour
 
     public static void LoadAudioSources()
     {
-        
-        AmbientInstances = GameObject.FindGameObjectsWithTag("Ambient").ToList();
         MusicInstances = GameObject.FindGameObjectsWithTag("Music").ToList();
+        AmbientInstances = GameObject.FindGameObjectsWithTag("Ambient").ToList();
+        StepsInstances = GameObject.FindGameObjectsWithTag("Steps").ToList();
     }
     
     public static void UpdateVolume()
@@ -44,6 +46,10 @@ public class AudioManager : MonoBehaviour
         foreach (GameObject go in MusicInstances)
         {
             go.GetComponent<AudioSource>().volume = MusicVolume;
+        }
+        foreach (GameObject go in StepsInstances)
+        {
+            go.GetComponent<AudioSource>().volume = StepsVolume;
         }
     }
 }

@@ -1,19 +1,19 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MusicSlider : MonoBehaviour
+public class StepsSlider : MonoBehaviour
 {
     private Slider _slider;
     private void Start()
     {
         _slider = GetComponent<Slider>();
-        _slider.value = AudioManager.MusicVolume;
+        _slider.value = AudioManager.StepsVolume;
     }
 
     public void ChangeVolume()
     {
-        AudioManager.MusicVolume = _slider.value;
-        //Debug.Log($"Music Volume: {_slider.value}");
+        AudioManager.StepsVolume = _slider.value;
+        Debug.Log($"Steps Volume: {_slider.value}");
         AudioManager.UpdateVolume();
     }
 }

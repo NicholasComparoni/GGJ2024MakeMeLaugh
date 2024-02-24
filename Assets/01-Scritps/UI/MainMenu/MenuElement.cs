@@ -34,6 +34,7 @@ public class MenuElement : MonoBehaviour, ISelectHandler, IDeselectHandler
 
     public void PlayGame()
     {
+        GameManager.Instance.GetComponent<AudioSource>().Stop();
         SceneManager.LoadScene("Game_EN");
     }
 
@@ -54,6 +55,7 @@ public class MenuElement : MonoBehaviour, ISelectHandler, IDeselectHandler
         if (SceneManager.GetActiveScene().name != "Menu")
         {
             TableTarget.ResetTableCounter();
+            GameManager.Instance.GetComponent<AudioSource>().Stop();
             SceneManager.LoadScene("Menu");
             AudioManager.UpdateVolume();
         }
