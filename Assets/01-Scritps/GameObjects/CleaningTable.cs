@@ -1,6 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+
 
 // aka TableTarget TODO: THIS FILE SHOULD NOT BE USED ANYMORE
 public class CleaningTable : Target 

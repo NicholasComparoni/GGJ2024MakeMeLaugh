@@ -163,7 +163,11 @@ namespace InputAndMovement
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            InteractionCanvas.Instance?.gameObject.SetActive(false);
+            if (InteractionCanvas.Instance != null)
+            {
+                InteractionCanvas.Instance.gameObject.SetActive(false);
+            }
+
             if (other.gameObject.TryGetComponent(out CharacterTarget character))
             {
                 character._xclPoint.gameObject.SetActive(false);

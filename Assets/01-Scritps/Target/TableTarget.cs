@@ -41,6 +41,11 @@ public class TableTarget : Target
         }
     }
 
+    public static void ResetTableCounter()
+    {
+        _tableCounter = 0;
+    }
+    
     // TODO (optional): launch event to tell the teleport door to open
     // TODO (else): make the check in player like done with pickup objects
 }
