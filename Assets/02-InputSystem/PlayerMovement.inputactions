@@ -682,6 +682,17 @@
                 },
                 {
                     "name": "",
+                    "id": "765265af-f430-4859-a6a7-24a19d7396b1",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "dee4dff7-965a-4091-99da-20a979956922",
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
