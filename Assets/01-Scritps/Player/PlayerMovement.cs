@@ -250,49 +250,110 @@ namespace InputAndMovement
             pInput.actions.FindActionMap("DumbButtons").Disable();
 
             nameBox.GetComponentInChildren<TMP_Text>().text = "Cinfa";
-            switch (GameManager.Instance.currentLevel)
+            switch (AudioManager.Language)
             {
-                case 1:
-                    switch (whichBtn)
+                case Language.ENG:
+                {
+                    switch (GameManager.Instance.currentLevel)
                     {
-                        case DUMB_BUTTON.INVENTORY_BTN:
-                            textBox.GetComponentInChildren<TMP_Text>().text =
-                                "Passa alla versione Premium a 59.99€ per sbloccare l'inventario!";
+                        case 1:
+                            switch (whichBtn)
+                            {
+                                case DUMB_BUTTON.INVENTORY_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "Upgrade to the premium version for $59.99 to unlock the inventory.";
+                                    break;
+                                case DUMB_BUTTON.MAP_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "There's no signal here, and Google Maps isn't working.";
+                                    break;
+                                case DUMB_BUTTON.DASH_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "Trying to run? He's too fluffy to zoom!";
+                                    break;
+                                case DUMB_BUTTON.ATTACK_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "That cosplay sword cost you a fortune, better not to use it.";
+                                    break;
+                            }
+
                             break;
-                        case DUMB_BUTTON.MAP_BTN:
-                            textBox.GetComponentInChildren<TMP_Text>().text =
-                                "Qui non prende, e Google Maps non funziona...";
-                            break;
-                        case DUMB_BUTTON.DASH_BTN:
-                            textBox.GetComponentInChildren<TMP_Text>().text =
-                                "Ma lo vedi che panza? E vuoi pure scattare??";
-                            break;
-                        case DUMB_BUTTON.ATTACK_BTN:
-                            textBox.GetComponentInChildren<TMP_Text>().text =
-                                "'Sta spada da cosplayer ti è costata una fortuna. NON usarla.";
+                        default:
+                            switch (whichBtn)
+                            {
+                                case DUMB_BUTTON.INVENTORY_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "Non ti è concesso aprire l'inventario MENTRE LAVORI!!";
+                                    break;
+                                case DUMB_BUTTON.MAP_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "Il tuo senso dell'orientamento è così pessimo che ti perdi pure in un fast-food? Seriously?";
+                                    break;
+                                case DUMB_BUTTON.DASH_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "Se corri con quel tanga potrebbe vedersi tutto, non provarci!";
+                                    break;
+                                case DUMB_BUTTON.ATTACK_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "Come penso di attaccare? Lanciando hamburger?";
+                                    break;
+                            }
+
                             break;
                     }
+
                     break;
-                default:
-                    switch (whichBtn)
+                }
+                case Language.ITA:
+                {
+                    switch (GameManager.Instance.currentLevel)
                     {
-                        case DUMB_BUTTON.INVENTORY_BTN:
-                            textBox.GetComponentInChildren<TMP_Text>().text =
-                                "Non ti è concesso aprire l'inventario MENTRE LAVORI!!";
+                        case 1:
+                            switch (whichBtn)
+                            {
+                                case DUMB_BUTTON.INVENTORY_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "Passa alla versione Premium a 59.99€ per sbloccare l'inventario!";
+                                    break;
+                                case DUMB_BUTTON.MAP_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "Qui non prende, e Google Maps non funziona...";
+                                    break;
+                                case DUMB_BUTTON.DASH_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "Ma lo vedi che panza? E vuoi pure scattare??";
+                                    break;
+                                case DUMB_BUTTON.ATTACK_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "'Sta spada da cosplayer ti è costata una fortuna. NON usarla.";
+                                    break;
+                            }
+
                             break;
-                        case DUMB_BUTTON.MAP_BTN:
-                            textBox.GetComponentInChildren<TMP_Text>().text =
-                                "Il tuo senso dell'orientamento è così pessimo che ti perdi pure in un fast-food? Seriously?";
-                            break;
-                        case DUMB_BUTTON.DASH_BTN:
-                            textBox.GetComponentInChildren<TMP_Text>().text =
-                                "Se corri con quel tanga potrebbe vedersi tutto, non provarci!";
-                            break;
-                        case DUMB_BUTTON.ATTACK_BTN:
-                            textBox.GetComponentInChildren<TMP_Text>().text =
-                                "Come penso di attaccare? Lanciando hamburger?";
+                        default:
+                            switch (whichBtn)
+                            {
+                                case DUMB_BUTTON.INVENTORY_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "You're not allowed to open the inventory WHILE YOU'RE WORKING!";
+                                    break;
+                                case DUMB_BUTTON.MAP_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "Is your sense of direction so terrible that you can even get lost in a fast food joint? SERIOUSLY?";
+                                    break;
+                                case DUMB_BUTTON.DASH_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "If you run with that thong, everything might be visible, don't even try it";
+                                    break;
+                                case DUMB_BUTTON.ATTACK_BTN:
+                                    textBox.GetComponentInChildren<TMP_Text>().text =
+                                        "How do you plan to attack? By throwing hamburgers?";
+                                    break;
+                            }
+
                             break;
                     }
+                }
                     break;
             }
         }
