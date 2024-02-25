@@ -63,7 +63,22 @@ public class GameManager : MonoBehaviour
     private void SpawnCharacters()
     {
         List<GameObject> spawnerList = GameObject.FindGameObjectsWithTag("Character").ToList();
-        List<GameObject> characterList = Resources.LoadAll<GameObject>("CharProps/DynamicCharaters").ToList();
+        List<GameObject> characterList = new();
+
+        switch (AudioManager.Language)
+        {
+            case Language.ENG:
+            {
+                characterList = Resources.LoadAll<GameObject>("CharProps/DynamicCharaters/ENG").ToList();
+                break;
+            }
+            case Language.ITA:
+            {
+                characterList = Resources.LoadAll<GameObject>("CharProps/DynamicCharaters/ITA").ToList();
+                break;
+            }
+        }
+
         List<int> loadedCharactersIndexes = new();
 
         for (int i = 0; i < spawnerList.Count; i++)

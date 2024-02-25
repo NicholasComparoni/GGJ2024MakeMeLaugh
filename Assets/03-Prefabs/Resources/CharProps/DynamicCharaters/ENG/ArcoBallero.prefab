@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2800782425445088716
+--- !u!1001 &271573586552120242
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,27 +10,35 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _charName
-      value: Debora
+      value: ArcoBallero
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _lastDialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d359f929272f1de44af4f240cc74348c, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _lastDialogueText
-      value: QUACK.
+      value: YYYYAAYYY
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[2].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 63ac335e9037e114399015e53f94affe, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[0].dialogueText
-      value: Quack...
+      value: Everything will be fineeee
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[1].dialogueText
-      value: "Tutto qui ci\xF2 che hai da dire?"
+      value: Well, that's not necessarily true...
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[2].dialogueText
-      value: Quack... Quack...
+      value: You're in deep shit!!!
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[1].currentSpeaker
@@ -38,7 +46,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[2].currentSpeaker
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_LocalScale.x
@@ -51,6 +59,10 @@ PrefabInstance:
     - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -95,10 +107,10 @@ PrefabInstance:
     - target: {fileID: 7413276524649070275, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b71266358dec7e440a7e25877f22263a, type: 3}
+      objectReference: {fileID: 21300000, guid: 20c5fbc7550de1944852a35f1545b953, type: 3}
     - target: {fileID: 7728384071963477568, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: m_Name
-      value: Debora
+      value: ArcoBallero
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

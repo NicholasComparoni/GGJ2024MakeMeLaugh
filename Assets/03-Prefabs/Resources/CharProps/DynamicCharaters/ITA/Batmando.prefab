@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7207981668333888050
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _charName
+      value: Batmando
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _lastDialogueText
+      value: BUONA FORTUNA GUERRIERO! SONO DALLA SUA PARTE!
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[0].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 97c334f12d8bc1342b0c7f83454eac50, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[1].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 4456938169a73c64aac4f8554eb155fb, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[2].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 4456938169a73c64aac4f8554eb155fb, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[3].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 4456938169a73c64aac4f8554eb155fb, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[4].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 4456938169a73c64aac4f8554eb155fb, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[5].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 4456938169a73c64aac4f8554eb155fb, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[6].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 6547947cd586717418e76c71c2b85be1, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[7].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 4456938169a73c64aac4f8554eb155fb, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[8].soundToPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: 4456938169a73c64aac4f8554eb155fb, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[0].dialogueText
+      value: "Fermo!! Metti gi\xF9 quella spada!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[1].dialogueText
+      value: Agente, la spada mi serve per sconfiggere un mostruodo drago che si
+        trova in fondo a questa grotta!
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[2].dialogueText
+      value: Capisco... Beh, potrei fare un'eccezione, ma tutto ha un prezzo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[3].dialogueText
+      value: In che senso scusi?
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[4].dialogueText
+      value: Io potrei farla passare, ma mi permetta che le dia il mia supporto per
+        sconfiggere il drago.
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[5].dialogueText
+      value: Vedo che ha il portafogli appesantito, potrebbe darmi il suo contenuto
+        in cambio del passaggio.
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[6].dialogueText
+      value: Si sta facendo corrompere?!?
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[7].dialogueText
+      value: CORRUZIONE? MA DI CHE STA PARLANDO?? LA VOGLIO SOLO RENDERE PIU' LEGGERO!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[8].dialogueText
+      value: "Che schifo i poliziotti dei nostri giorni, farebbero di tutto per s\xE9
+        stessi..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[1].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[2].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[3].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[4].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[5].currentSpeaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[6].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _dialogue.Array.data[8].currentSpeaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678696229477006921, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944958183009861807, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7413276524649070275, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bb028c396aead9e4cb61f909b48fe7a3, type: 3}
+    - target: {fileID: 7728384071963477568, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: m_Name
+      value: Batmando
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}

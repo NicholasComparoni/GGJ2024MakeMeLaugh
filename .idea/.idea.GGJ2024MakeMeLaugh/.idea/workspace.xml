@@ -5,15 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80038deb-f190-459f-9277-bdd94750e055" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG/ArcoBallero.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG/Batmando.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG/Chiavica.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG/Chiavica.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG/ChubbyBunny.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG/ChubbyBunny.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG/Debora.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG/Debora.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG/Liquirizia.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG/Liquirizia.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG/MilkoBot.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG/MilkoBot.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA/Batmando.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA/Batmando.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ2024MakeMeLaugh/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Game_EN.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Game_EN.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Managers/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Managers/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Game_ENG.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Game_ENG.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00-Scenes/Game_ITA.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00-Scenes/Game_ITA.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/Managers/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ArcoBallero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA/ArcoBallero.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ArcoBallero.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA/ArcoBallero.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/Batmando.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG/ArcoBallero.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/Batmando.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ENG/Batmando.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/Chiavica.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA/Chiavica.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/Chiavica.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA/Chiavica.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ChubbyBunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA/ChubbyBunny.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ChubbyBunny.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA/ChubbyBunny.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/Debora.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA/Debora.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/Debora.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA/Debora.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/Liquirizia.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA/Liquirizia.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/Liquirizia.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA/Liquirizia.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/MilkoBot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA/MilkoBot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/MilkoBot.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03-Prefabs/Resources/CharProps/DynamicCharaters/ITA/MilkoBot.prefab.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +67,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/GraphicEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/LayoutElementEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIElements/PanelRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Graphic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Editor/TestBehaviourBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/CanvasSizeCorrectInAwakeAndStart.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/NoActiveCameraInSceneDoesNotCrashEditor.cs" root0="SKIP_HIGHLIGHTING" />
@@ -115,10 +142,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11496">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="11496" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -145,6 +172,7 @@
       <workItem from="1708618552983" duration="14729000" />
       <workItem from="1708705653510" duration="3184000" />
       <workItem from="1708764523283" duration="9050000" />
+      <workItem from="1708855068944" duration="1475000" />
     </task>
     <servers />
   </component>
@@ -156,5 +184,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/01-Scritps/UI/MainMenu/MenuElement.cs</url>
+          <line>26</line>
+          <properties documentPath="C:\Users\Mike\GGJ2024MakeMeLaugh\Assets\01-Scritps\UI\MainMenu\MenuElement.cs" initialLine="27" containingFunctionPresentation="Method 'OnSelect'">
+            <startOffsets>
+              <option value="755" />
+            </startOffsets>
+            <endOffsets>
+              <option value="756" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -13,8 +13,12 @@ PrefabInstance:
       value: Chubby Bunny
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
+      propertyPath: _lastDialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c50caf8e1414594082c2572bdafc3e4, type: 3}
+    - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _lastDialogueText
-      value: "Hey amico, vieni qui! C'\xE8 anche la via della zucchina!"
+      value: Hey man, come here! There is also the zucchini way!
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.size
@@ -34,20 +38,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[1].dialogueText
-      value: Vuoi seguire la via della carota?
+      value: Do you want to follow the way of the carrot?
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[2].dialogueText
-      value: "Non so... Cos'\xE8?"
+      value: I don't know. What is it?
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[3].dialogueText
-      value: "La via della carota non \xE8 una cosa che si pu\xF2 spiegare, solo
-        una cosa che si pu\xF2 sentire."
+      value: The carrot way is not something that can be explained, only something
+        that can be felt.
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[4].dialogueText
-      value: Grazie lo stesso, ma non sono troppo convinto.
+      value: Thanks anyway, but I'm not too convinced.
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[2].currentSpeaker

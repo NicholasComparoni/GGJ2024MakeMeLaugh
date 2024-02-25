@@ -256,6 +256,7 @@ Transform:
   - {fileID: 1345039278}
   - {fileID: 307136553}
   - {fileID: 1036871728}
+  - {fileID: 1344412454}
   m_Father: {fileID: 142630080}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &120431143
@@ -1063,6 +1064,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1951526708}
     m_Modifications:
+    - target: {fileID: 844135609341040411, guid: f2ea35f7364e5f2419065ea5c4b1aed6, type: 3}
+      propertyPath: _lastDialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1ec88399799638e4aae03251c8f30a0a, type: 3}
+    - target: {fileID: 844135609341040411, guid: f2ea35f7364e5f2419065ea5c4b1aed6, type: 3}
+      propertyPath: _lastDialogueText
+      value: I used to work here too, and it was a crunchy experience.
+      objectReference: {fileID: 0}
+    - target: {fileID: 844135609341040411, guid: f2ea35f7364e5f2419065ea5c4b1aed6, type: 3}
+      propertyPath: _dialogue.Array.data[0].dialogueText
+      value: Hello I would like a grand crispy extra bacon no bacon, no meat, no
+        bread, no wrapping, no matter...
+      objectReference: {fileID: 0}
+    - target: {fileID: 844135609341040411, guid: f2ea35f7364e5f2419065ea5c4b1aed6, type: 3}
+      propertyPath: _dialogue.Array.data[1].dialogueText
+      value: Stop still! I didn't understand anything!
+      objectReference: {fileID: 0}
+    - target: {fileID: 844135609341040411, guid: f2ea35f7364e5f2419065ea5c4b1aed6, type: 3}
+      propertyPath: _dialogue.Array.data[2].dialogueText
+      value: I would just like some tissues....
+      objectReference: {fileID: 0}
+    - target: {fileID: 844135609341040411, guid: f2ea35f7364e5f2419065ea5c4b1aed6, type: 3}
+      propertyPath: _dialogue.Array.data[3].dialogueText
+      value: BUT...you could have said this earlier....
+      objectReference: {fileID: 0}
     - target: {fileID: 7180321201874510621, guid: f2ea35f7364e5f2419065ea5c4b1aed6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 53.57
@@ -2055,6 +2081,55 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6071430450226261760, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
+      propertyPath: _lastDialogueText
+      value: "GET OUT! PRESS <b>ALT + F4</b> AND SHOW YOURSELF NO MORE IN THIS CAVE!\n[You
+        can also donate to make a dedicated keybind! Starting from 99.99\u20AC :)]"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071430450226261760, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
+      propertyPath: _dialogue.Array.data[0].dialogueText
+      value: WELCOME TO MY ABODE, TOO BEAUTIFUL TO BE RENDERED BY YOUR SCRAPPY PC!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071430450226261760, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
+      propertyPath: _dialogue.Array.data[1].dialogueText
+      value: GET READY FOR THE BEST BALANCED BOSS FIGHT IN HISTORY
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071430450226261760, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
+      propertyPath: _dialogue.Array.data[2].dialogueText
+      value: IN FACT IN THIS FIGHT I WILL BE NERFED AS HELL MUHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071430450226261760, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
+      propertyPath: _dialogue.Array.data[3].dialogueText
+      value: 'PREPARE FOR MY WRA-
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071430450226261760, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
+      propertyPath: _dialogue.Array.data[5].dialogueText
+      value: SEE WHAT HAPPENS TO BLOW MONEY ON ONLY FANS!?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071430450226261760, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
+      propertyPath: _dialogue.Array.data[6].dialogueText
+      value: 'SHOCKING EPIC FINAL SUPERIOR ATTACK
+
+
+        OF INVISIBLE FIRE'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071430450226261760, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
+      propertyPath: _dialogue.Array.data[8].dialogueText
+      value: MY INFINITE POWER IS NOT IN THE LEAST COMPARABLE WITH MY INEXISTENT
+        CAPACITY TO MOVE.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071430450226261760, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
+      propertyPath: _dialogue.Array.data[9].dialogueText
+      value: THANK YOU THAT THEY DIDN'T ANIMATE ME BECAUSE I WOULD HAVE GIVEN YOU
+        A HUGE SLAP!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071430450226261760, guid: 6322a6a2f43949e4face2cade594a089, type: 3}
+      propertyPath: _dialogue.Array.data[10].dialogueText
+      value: Look Mr. Illustrious, the jam is over, the coder has gone crazy, BONA
+        MERDE!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2388,6 +2463,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75183df3780fa9e439ea73fb5dd044cc, type: 3}
+--- !u!1 &1344412453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1344412454}
+  m_Layer: 0
+  m_Name: CharacterSpawner (5)
+  m_TagString: Character
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1344412454
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344412453}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 46.62, y: -3.32, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 80372308}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1345039277
 GameObject:
   m_ObjectHideFlags: 0
@@ -3334,7 +3440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1629126456970054739, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
       propertyPath: m_Name
-      value: INFOGIOCO
+      value: Mike
       objectReference: {fileID: 0}
     - target: {fileID: 1961970767520117968, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
       propertyPath: m_Sprite
@@ -3434,7 +3540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7678779132595680346, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.111
       objectReference: {fileID: 0}
     - target: {fileID: 7974514025177951154, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
       propertyPath: m_IsTrigger
@@ -3458,7 +3564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8478386791321779898, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
       propertyPath: _lastDialogueText
-      value: "Non ci sono pi\xF9 i \"serious games\" di una volta..."
+      value: There are no longer the "serious games" of yesteryear....
       objectReference: {fileID: 0}
     - target: {fileID: 8478386791321779898, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
       propertyPath: _dialogue.Array.size
@@ -3474,16 +3580,16 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: ae29a3636a86d3640b9aedfb7ad6741a, type: 3}
     - target: {fileID: 8478386791321779898, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
       propertyPath: _dialogue.Array.data[0].dialogueText
-      value: "Ascolta, sei in un posto SERIO. \xC8 vietato ridere, altrimenti viene
-        D**#!@**f* e ti strappa le mutande!"
+      value: Listen, you are in a SERIOUS place. It is forbidden to laugh, otherwise
+        D**#!@**f* will come and rip your panties off!
       objectReference: {fileID: 0}
     - target: {fileID: 8478386791321779898, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
       propertyPath: _dialogue.Array.data[1].dialogueText
-      value: Ma io non ce le ho le mutande...
+      value: But I don't have underwear....
       objectReference: {fileID: 0}
     - target: {fileID: 8478386791321779898, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
       propertyPath: _dialogue.Array.data[2].dialogueText
-      value: Non mi interessa! Dovunque andrai, esciLE!
+      value: I don't care! Wherever you go, get them out!
       objectReference: {fileID: 0}
     - target: {fileID: 8478386791321779898, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
       propertyPath: _dialogue.Array.data[3].dialogueText
@@ -3637,6 +3743,37 @@ PrefabInstance:
     - target: {fileID: 2142058758945196732, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478386791321779898, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
+      propertyPath: _lastDialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c50caf8e1414594082c2572bdafc3e4, type: 3}
+    - target: {fileID: 8478386791321779898, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
+      propertyPath: _lastDialogueText
+      value: GO TO WORK!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478386791321779898, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
+      propertyPath: _dialogue.Array.data[0].dialogueText
+      value: Hey, where have all the employees gone?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478386791321779898, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
+      propertyPath: _dialogue.Array.data[1].dialogueText
+      value: 'What should I know about it?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478386791321779898, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
+      propertyPath: _dialogue.Array.data[2].dialogueText
+      value: IT'S ALL YOUR FAULT!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478386791321779898, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
+      propertyPath: _dialogue.Array.data[3].dialogueText
+      value: But I've just arrived, what do I need to know....
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478386791321779898, guid: 37a25b8595515474aa5a1ee96c0bf662, type: 3}
+      propertyPath: _dialogue.Array.data[4].dialogueText
+      value: Start cleaning the tables and I'll flush you down the toilet! And hurry
+        up!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
