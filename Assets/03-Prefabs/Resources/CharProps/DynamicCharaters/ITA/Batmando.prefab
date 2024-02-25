@@ -39,11 +39,11 @@ PrefabInstance:
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[4].soundToPlay
       value: 
-      objectReference: {fileID: 8300000, guid: 4456938169a73c64aac4f8554eb155fb, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[5].soundToPlay
       value: 
-      objectReference: {fileID: 8300000, guid: 4456938169a73c64aac4f8554eb155fb, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[6].soundToPlay
       value: 
@@ -51,11 +51,11 @@ PrefabInstance:
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[7].soundToPlay
       value: 
-      objectReference: {fileID: 8300000, guid: 4456938169a73c64aac4f8554eb155fb, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[8].soundToPlay
       value: 
-      objectReference: {fileID: 8300000, guid: 4456938169a73c64aac4f8554eb155fb, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[0].dialogueText
       value: "Fermo!! Metti gi\xF9 quella spada!"
