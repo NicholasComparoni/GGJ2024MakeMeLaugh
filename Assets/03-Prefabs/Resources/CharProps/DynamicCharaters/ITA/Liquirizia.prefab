@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[4].dialogueText
-      value: "Magari dopo aver sconfitto il drego, se sar\xF2 ancora vivo."
+      value: "Magari dopo aver sconfitto il drago, se sar\xF2 ancora vivo."
       objectReference: {fileID: 0}
     - target: {fileID: 608595498799379625, guid: ec8b373ac8ec48b45a6059a642e6178c, type: 3}
       propertyPath: _dialogue.Array.data[5].dialogueText
